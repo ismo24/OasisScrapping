@@ -10,16 +10,12 @@ def getAllAutos():
     # return response.json()
    
 
-
-
-
-
 def updateAllAutos(AllInfos):
     autosLength=len(AllInfos)
     url=f"{databaseUrl}/AllIds/AllIds.json"
     response=requests.patch(url, json=AllInfos)
     
-    print("voitures ajoutées :",autosLength)
+    # print("voitures ajoutées :",autosLength)
 
 
 

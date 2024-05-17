@@ -12,7 +12,7 @@ from bs4 import BeautifulSoup
 AllInfos={}
 for marque in dict_Marques_Names.keys():
     marqueKey=f"{marque}"
-    for model in Auto_models[marqueKey].values():
+    for realmodelName,model in Auto_models[marqueKey].items():
         url_to_scrape=f"https://www.autoscout24.fr/lst/{marque}/{model}?atype=C&cy=D&damaged_listing=exclude&fregfrom=2005&powertype=kw&pricefrom=3000&page=1"
         ModelAllInfos=ModelsInfosFinder(url_to_scrape)
 
@@ -34,7 +34,7 @@ for marque in dict_Marques_Names.keys():
                 ModelAllInfos[autoId]["myEquipement"]=Equipment_Data_Finder(auto_soup)
                 ModelAllInfos[autoId]["myColorData"]=Color_Data_Finder(auto_soup)
                 ModelAllInfos[autoId]["marque"]=marque
-                ModelAllInfos[autoId]["modèle"]=model
+                ModelAllInfos[autoId]["model"]=realmodelName
                 # print("nouveau vehicule :",ModelAllInfos[autoId])
                 
             OnlineAutos=getAllAutos()
