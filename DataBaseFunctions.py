@@ -16,11 +16,20 @@ def getAllAutos():
 def updateAllAutos(AllInfos):
     autosLength=len(AllInfos)
     url=f"{databaseUrl}/AllIds/AllIds.json"
-    response=requests.patch(url, json=AllInfos)
+    response=requests.put(url, json=AllInfos)
     
-    # print("voitures ajoutées :",autosLength)
+    print("voitures ajoutées :",autosLength)
 
 
 
+def showAutosLength():
+    url=f"{databaseUrl}/AllIds/AllIds.json"
+    response=requests.get(url)
+    resultat=response.json()
+    print("nombre de vehicules",len(response.json()))
+    modeles=[resultat[i]["model"] for i in resultat.keys() ]
+    uniquesmodels=set(modeles)
+    print("tous les modeles entrés",uniquesmodels)
 
 
+# showAutosLength()
