@@ -38,8 +38,9 @@ for marque in dict_Marques_Names.keys():
                 # print("nouveau vehicule :",ModelAllInfos[autoId])
                 
             OnlineAutos=getAllAutos()
-            OnlineAutos.update(ModelAllInfos)
-            updateAllAutos(OnlineAutos)
+            New_dict={**OnlineAutos,**ModelAllInfos}
+            # OnlineAutos.update(ModelAllInfos)
+            updateAllAutos(New_dict)
             
         # else:
         #     print(f"Il n'y a pas de véhicule de la marque {marque} et modèle {model} disponible ")
