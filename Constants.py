@@ -1,8 +1,11 @@
 
 
 
+#On va sauter mercedes pour faire la suite et on revient plus tard 
+# 'audi':'Audi','bmw':'BMW', 'ford':'Ford','mercedes-benz':'Mercedes-Benz',
+
 dict_Marques_Names={
- 'audi':'Audi','bmw':'BMW', 'ford':'Ford','mercedes-benz':'Mercedes-Benz','opel':'Opel','volkswagen':'Volkswagen','renault':'Renault','honda':'Honda',
+ 'opel':'Opel','volkswagen':'Volkswagen','renault':'Renault','honda':'Honda',
  'hummer':'HUMMER','hyundai':'Hyundai','kia':'Kia','land-rover':'Land Rover','lexus':'Lexus','mazda':'Mazda','mini':'MINI','mitsubishi':'Mitsubishi','nissan':'Nissan',
  'peugeot':'Peugeot','skoda':'Skoda','suzuki':'Suzuki','toyota':'Toyota','volvo':'Volvo'
 }
