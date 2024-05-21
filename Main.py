@@ -38,8 +38,12 @@ for marque in dict_Marques_Names.keys():
                 # print("nouveau vehicule :",ModelAllInfos[autoId])
                 
             OnlineAutos=getAllAutos()
+            print("ancien nombre de voitures :",len(OnlineAutos))
+            print("voitures à ajouter :",len(ModelAllInfos))
             # New_dict={**OnlineAutos,**ModelAllInfos}
             OnlineAutos.update(ModelAllInfos)
+            print('nouvelle longueur normalement :',len(OnlineAutos))
+            
             updateAllAutos(OnlineAutos)
             
         # else:

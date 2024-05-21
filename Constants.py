@@ -3,9 +3,10 @@
 
 #On va sauter mercedes pour faire la suite et on revient plus tard 
 # 'audi':'Audi','bmw':'BMW', 'ford':'Ford','mercedes-benz':'Mercedes-Benz',
+#On va mettre egalement opel de coté et voir la suite 'opel':'Opel',
 
 dict_Marques_Names={
- 'opel':'Opel','volkswagen':'Volkswagen','renault':'Renault','honda':'Honda',
+ 'volkswagen':'Volkswagen','renault':'Renault','honda':'Honda',
  'hummer':'HUMMER','hyundai':'Hyundai','kia':'Kia','land-rover':'Land Rover','lexus':'Lexus','mazda':'Mazda','mini':'MINI','mitsubishi':'Mitsubishi','nissan':'Nissan',
  'peugeot':'Peugeot','skoda':'Skoda','suzuki':'Suzuki','toyota':'Toyota','volvo':'Volvo'
 }

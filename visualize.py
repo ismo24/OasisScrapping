@@ -7,20 +7,20 @@ def showAutosLength():
     response=requests.get(url)
     resultat=response.json()
     print("nombre de vehicules",len(response.json()))
-    total=0
-    for id in resultat.keys():
-        for idkeys in resultat[id].keys():
-            if idkeys=="modèle":
-                resultat[id]["model"]=resultat[id]["modèle"]
-                del resultat[id]["modèle"]
-                total+=1
-                break
-    print("nombre modifié",total)
-    url=f"{databaseUrl}/AllIds/AllIds.json"
-    response=requests.put(url, json=resultat)
-    modeles=[resultat[i]["marque"] for i in resultat.keys() ]
-    uniquesmodels=set(modeles)
-    print("tous les modeles entrés",uniquesmodels)
+    # total=0
+    # for id in resultat.keys():
+    #     for idkeys in resultat[id].keys():
+    #         if idkeys=="modèle":
+    #             resultat[id]["model"]=resultat[id]["modèle"]
+    #             del resultat[id]["modèle"]
+    #             total+=1
+    #             break
+    # print("nombre modifié",total)
+    # url=f"{databaseUrl}/AllIds/AllIds.json"
+    # response=requests.put(url, json=resultat)
+    # modeles=[resultat[i]["marque"] for i in resultat.keys() ]
+    # uniquesmodels=set(modeles)
+    # print("tous les modeles entrés",uniquesmodels)
 
 
 showAutosLength()

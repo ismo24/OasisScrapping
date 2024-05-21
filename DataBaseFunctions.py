@@ -18,7 +18,7 @@ def updateAllAutos(AllInfos):
     url=f"{databaseUrl}/AllIds/AllIds.json"
     response=requests.patch(url, json=AllInfos)
     
-    print("voitures ajoutées :",autosLength)
+    print("total réel de voitures enregistrées :",autosLength)
 
 
 
