@@ -13,13 +13,20 @@ def getAllAutos():
         return {}
    
 
-def updateAllAutos(AllInfos,token):
-    autosLength=len(AllInfos)
-    url=f"{databaseUrl}/AllIds/AllIds.json?auth={token}"
-    response=requests.put(url, json=AllInfos)
-    print("SuccesssfullUpdate ? :",response.status_code == 200)
-    print("total réel de voitures enregistrées :",autosLength)
-    print(response.json())
+def updateAllAutos(AllInfos, token):
+    autosLength = len(AllInfos)
+    url = f"{databaseUrl}/AllIds/AllIds.json?auth={token}"
+    response = requests.put(url, json=AllInfos, verify=False)  # Bypass SSL verification
+
+    print("SuccessfulUpdate ? :", response.status_code == 200)
+    print("Total number of cars recorded:", autosLength)
+
+    try:
+        response_data = response.json()
+        print(response_data)
+    except requests.exceptions.JSONDecodeError as e:
+        print("Failed to decode JSON response:", e)
+        print("Raw response text:", response.text)
 
 
 
