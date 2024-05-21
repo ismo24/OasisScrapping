@@ -1,7 +1,7 @@
 import requests
 
-#  "AIzaSyB80SxC_twH6EWCxfh0iUxj4On6BcWnXEY"
-API_KEY ="AIzaSyB80SxC_twH6EWCxfh0iUxj4On6BcWnXEY"
+
+API_KEY ="exempleKey"
 
 def authenticate(mode):
     url = f"https://identitytoolkit.googleapis.com/v1/accounts:{mode}?key={API_KEY}"
