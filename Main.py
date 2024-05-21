@@ -42,12 +42,12 @@ for marque in dict_Marques_Names.keys():
                 
             OnlineAutos=getAllAutos()
             print("ancien nombre de voitures :",len(OnlineAutos))
-            print("voitures à ajouter {marque} :",len(ModelAllInfos))
+            print(f"voitures à ajouter {marque} :",len(ModelAllInfos))
             # New_dict={**OnlineAutos,**ModelAllInfos}
-            OnlineAutos.update(ModelAllInfos)
-            print('nouvelle longueur normalement :',len(OnlineAutos))
+            # OnlineAutos.update(ModelAllInfos)
+            # print('nouvelle longueur normalement :',len(OnlineAutos))
             
-            updateAllAutos(OnlineAutos,myToken)
+            updateAllAutos(ModelAllInfos,myToken)
             
         # else:
         #     print(f"Il n'y a pas de véhicule de la marque {marque} et modèle {model} disponible ")

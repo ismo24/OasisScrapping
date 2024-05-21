@@ -17,7 +17,7 @@ def getAllAutos():
 def updateAllAutos(AllInfos, token):
     autosLength = len(AllInfos)
     url = f"{databaseUrl}/AllIds/AllIds.json?auth={token}"
-    response = requests.put(url, json=AllInfos, verify=True)  # Enable SSL verification
+    response = requests.patch(url, json=AllInfos, verify=True)  # Enable SSL verification
 
     print("SuccessfulUpdate ? :", response.status_code == 200)
     print("Total number of cars recorded:", autosLength)

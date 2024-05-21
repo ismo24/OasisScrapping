@@ -30,7 +30,7 @@ def showAutosLength():
     # print("tous les modeles entrés",uniquesmodels)
 
 
-showAutosLength()
+# showAutosLength()
 
 
 myDict={'C 250', 'X7', 'i3', 'Grand C-Max', 'Allroad', 'C 55 AMG', 'Transit Connect', 'GT', 'E 550', 'a8', 'AMG GT', 'Série 4 (tous)', 'R8', '216', '220', 'X3', 'Focus CC', 'A6 allroad', 'RS5', 'E 50 AMG', 'C 200', 'A5', 'A 180', 'Classe C (tous)', 'B 150', '225', 'Série M (tous)', 'iX2', 'A 170', 'A6', 'Grand Tourneo', 'Mondeo', '130', 'Transit Custom', 'A4', 'Tourneo Courier', '300', '350', 'M850', 'CL 55 AMG', '316', '750', '230', 'C 240', '620', '540', '528', 'CL 600', 'Kuga', '180', 'Active Hybrid 3', 'e-tron', 'S4', 'i5', '116', 'Transit', 'TTS', 'i7',
@@ -47,10 +47,11 @@ def testget():
 
 def testUpdate(token):
     url=f"{databaseUrl}/Test/Test.json?auth={token}"
-    response=requests.put(url,json={'a':3,'b':4})
+    response=requests.patch(url,json={'f':5,'g':6,'h':7,'i':8})
     print("SuccesssfullUpdate ? :",response.status_code == 200)
     resultat=response.json()
     print("test",resultat)
 
-# testget()
-# testUpdate(myToken)
+
+testUpdate(myToken)
+testget()
