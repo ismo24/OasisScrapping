@@ -19,6 +19,7 @@ def updateAllAutos(AllInfos,token):
     response=requests.put(url, json=AllInfos)
     print("SuccesssfullUpdate ? :",response.status_code == 200)
     print("total réel de voitures enregistrées :",autosLength)
+    print(response.json())
 
 
 

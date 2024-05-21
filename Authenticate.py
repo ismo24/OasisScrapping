@@ -28,7 +28,7 @@ def authenticate(mode):
 
 def login():
     token = authenticate('signInWithPassword')
-    
+    print("token ",token)
     return token
 
 def sign_up():
