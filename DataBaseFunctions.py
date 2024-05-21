@@ -13,9 +13,9 @@ def getAllAutos():
         return {}
    
 
-def updateAllAutos(AllInfos):
+def updateAllAutos(AllInfos,token):
     autosLength=len(AllInfos)
-    url=f"{databaseUrl}/AllIds/AllIds.json"
+    url=f"{databaseUrl}/AllIds/AllIds.json?auth={token}"
     response=requests.put(url, json=AllInfos)
     print("SuccesssfullUpdate ? :",response.status_code == 200)
     print("total réel de voitures enregistrées :",autosLength)

@@ -1,15 +1,18 @@
 import json
 import requests
 import re
+from bs4 import BeautifulSoup
 from Constants import dict_Marques_Names,Auto_models
 from ScrapingFunctions import ModelsInfosFinder,price_finder,Infos_generales_Finder,Basic_Data_Finder,Historical_Data_Finder,Technical_Data_Finder,Energie_Data_Finder,Equipment_Data_Finder,Color_Data_Finder
 from DataBaseFunctions import getAllAutos,updateAllAutos
-from bs4 import BeautifulSoup
+from Authenticate import sign_up,login
 
 
 
 
 AllInfos={}
+myToken=login()
+
 for marque in dict_Marques_Names.keys():
     marqueKey=f"{marque}"
     for realmodelName,model in Auto_models[marqueKey].items():
@@ -39,12 +42,12 @@ for marque in dict_Marques_Names.keys():
                 
             OnlineAutos=getAllAutos()
             print("ancien nombre de voitures :",len(OnlineAutos))
-            print("voitures à ajouter :",len(ModelAllInfos))
+            print("voitures à ajouter {marque} :",len(ModelAllInfos))
             # New_dict={**OnlineAutos,**ModelAllInfos}
             OnlineAutos.update(ModelAllInfos)
             print('nouvelle longueur normalement :',len(OnlineAutos))
             
-            updateAllAutos(OnlineAutos)
+            updateAllAutos(OnlineAutos,myToken)
             
         # else:
         #     print(f"Il n'y a pas de véhicule de la marque {marque} et modèle {model} disponible ")
