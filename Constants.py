@@ -3,10 +3,15 @@
 
 #On va sauter mercedes pour faire la suite et on revient plus tard 
 # 'audi':'Audi','bmw':'BMW', 'ford':'Ford','mercedes-benz':'Mercedes-Benz',
-#On va mettre egalement opel de coté et voir la suite 'opel':'Opel',
+#On va mettre egalement opel de coté et voir la suite 
+
+#  {'ID.6', 'ID.4', 'ID.Buzz Cargo', 'Golf', 'Bus', 'Fox', 'Cross Touran', 'Bora', 'Cross Golf', 'Caddy',
+#    'Eos', 'Golf Variant', 'Golf Cabriolet', 'Golf Sportsvan', 'ID Buzz', 'ID.5',
+#    'Arteon', 'Golf Plus', 'CC', 'e-Golf', 'Crafter', 'Beetle', 'Golf GTD', 'Golf GTE',
+#      'Grand California', 'Atlas', 'ID.3', 'Golf R', 'Amarok', 'Coccinelle', 'Golf GTI'}
 
 dict_Marques_Names={
- 'volkswagen':'Volkswagen','renault':'Renault','honda':'Honda',
+ 'opel':'Opel','volkswagen':'Volkswagen','renault':'Renault','honda':'Honda',
  'hummer':'HUMMER','hyundai':'Hyundai','kia':'Kia','land-rover':'Land Rover','lexus':'Lexus','mazda':'Mazda','mini':'MINI','mitsubishi':'Mitsubishi','nissan':'Nissan',
  'peugeot':'Peugeot','skoda':'Skoda','suzuki':'Suzuki','toyota':'Toyota','volvo':'Volvo'
 }
@@ -171,16 +176,19 @@ Auto_models={
     'Zafira': 'zafira', 'Zafira Life': 'zafira-life', 'Zafira Tourer': 'zafira-tourer', 'Autres': 'autres'
 },
 
+
+
+# '181': '181', 'Amarok': 'amarok', 'Anfibio': 'anfibio', 'Arteon': 'arteon', 'Atlas': 'atlas',
+#     'Beetle': 'beetle', 'Bora': 'bora', 'Buggy': 'buggy', 'Bus': 'bus', 'Caddy': 'caddy',
+#     'CC': 'cc', 'Coccinelle': 'coccinelle', 'Corrado': 'corrado', 'Crafter': 'crafter', 'Cross Touran': 'cross-touran',
+#     'Derby': 'derby', 'Eos': 'eos', 'Escarabajo': 'escarabajo', 'Fox': 'fox', 'Golf(tous)': 'golf-(tous)',
+#     'Cross Golf': 'cross-golf', 'e-Golf': 'e-golf', 'Golf': 'golf', 'Golf Cabriolet': 'golf-cabriolet', 'Golf GTD': 'golf-gtd',
+#     'Golf GTE': 'golf-gte', 'Golf GTI': 'golf-gti', 'Golf Plus': 'golf-plus', 'Golf R': 'golf-r', 'Golf Sportsvan': 'golf-sportsvan',
+#     'Golf Variant': 'golf-variant', 'Grand California': 'grand-california',
 'volkswagen' : {
-    '181': '181', 'Amarok': 'amarok', 'Anfibio': 'anfibio', 'Arteon': 'arteon', 'Atlas': 'atlas',
-    'Beetle': 'beetle', 'Bora': 'bora', 'Buggy': 'buggy', 'Bus': 'bus', 'Caddy': 'caddy',
-    'CC': 'cc', 'Coccinelle': 'coccinelle', 'Corrado': 'corrado', 'Crafter': 'crafter', 'Cross Touran': 'cross-touran',
-    'Derby': 'derby', 'Eos': 'eos', 'Escarabajo': 'escarabajo', 'Fox': 'fox', 'Golf(tous)': 'golf-(tous)',
-    'Cross Golf': 'cross-golf', 'e-Golf': 'e-golf', 'Golf': 'golf', 'Golf Cabriolet': 'golf-cabriolet', 'Golf GTD': 'golf-gtd',
-    'Golf GTE': 'golf-gte', 'Golf GTI': 'golf-gti', 'Golf Plus': 'golf-plus', 'Golf R': 'golf-r', 'Golf Sportsvan': 'golf-sportsvan',
-    'Golf Variant': 'golf-variant', 'Grand California': 'grand-california', 'ID.Buzz (tous)': 'id-buzz-(tous)', 'ID Buzz': 'id-buzz',
-    'ID.Buzz Cargo': 'id-buzz-cargo', 'ID.3': 'id-3', 'ID.4': 'id-4', 'ID.5': 'id-5', 'ID.6': 'id-6', 'ID.7': 'id-7',
-    'lltis': 'lltis', 'Jetta': 'jetta', 'Käfer': 'kafer', 'Karmann Ghia': 'karmann-ghia', 'Kever': 'kever',
+     'ID.Buzz (tous)': 'id.-buzz-(tous)', 'ID Buzz': 'id.-buzz',
+    'ID.Buzz Cargo': 'id.-buzz-cargo', 'ID.3': 'id.3', 'ID.4': 'id.4', 'ID.5': 'id.5', 'ID.6': 'id.6', 'ID.7': 'id.7',
+    'lltis': 'lltis', 'Jetta': 'jetta', 'Käfer': 'käfer', 'Karmann Ghia': 'karmann-ghia', 'Kever': 'kever',
     'L80': 'l80', 'LT': 'lt', 'Lupo': 'lupo', 'Maggiolino': 'maggiolino', 'New Beetle': 'new-beetle',
     'Passat (tous)': 'passat-(tous)', 'Passat': 'passat', 'Passat Alltrack': 'passat-alltrack', 'Passat CC': 'passat-cc',
     'Passat Variant': 'passat-variant', 'Phaeton': 'phaeton', 'Pointer': 'pointer', 'Polo (tous)': 'polo-(tous)',
