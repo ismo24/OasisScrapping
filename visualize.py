@@ -25,9 +25,9 @@ def showAutosLength():
     # print("nombre modifié",total)
     # url=f"{databaseUrl}/AllIds/AllIds.json"
     # response=requests.put(url, json=resultat)
-    modeles=[resultat[i]["model"] for i in resultat.keys() if resultat[i]["marque"]=='opel' ]
-    uniquesmodels=set(modeles)
-    print("tous les modeles entrés",uniquesmodels)
+    # modeles=[resultat[i]["model"] for i in resultat.keys() if resultat[i]["marque"]=='opel' ]
+    # uniquesmodels=set(modeles)
+    # print("tous les modeles entrés",uniquesmodels)
 
 
 showAutosLength()
