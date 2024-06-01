@@ -14,7 +14,7 @@ def getAllAutos():
         return {}
    
 
-def updateAllAutos(AllInfos, token,mylastModel):
+def updateAllAutos(AllInfos, token,actualModelIndex):
     autosLength = len(AllInfos)
     url = f"{databaseUrl}/AllIds/AllIds.json?auth={token}"
     response = requests.patch(url, json=AllInfos, verify=True)  # Enable SSL verification
@@ -29,19 +29,24 @@ def updateAllAutos(AllInfos, token,mylastModel):
     #     print("Failed to decode JSON response:", e)
     #     print("Raw response text:", response.text)
     if response.status_code == 200:
-        data={}
-        # Charger le fichier JSON
-        with open('progression.json', 'r') as file:
-            data = json.load(file)
-            #Afficher l'index passé
-            print("Index passé",data["index"])
-            # Modifier les données
-            data["index"] = AllModels.index(mylastModel)
-            #Afficher l'index présent
-            print("Index présent",data["index"])
+        data={"index": actualModelIndex}
+        print("Index modifié",data["index"])
         # Enregistrer les modifications
         with open('progression.json', 'w') as file:
             json.dump(data, file, indent=4)
+
+
+# with open('progression.json', 'r') as file:
+#     data = json.load(file)
+#     #Afficher l'index passé
+#     print("Index passé",data["index"])
+#     # Modifier les données
+#     data["index"] = 11
+#     #Afficher l'index présent
+#     print("Index présent",data["index"])
+# # Enregistrer les modifications
+# with open('progression.json', 'w') as file:
+#     json.dump(data, file, indent=4)
 
 
 

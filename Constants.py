@@ -186,15 +186,16 @@ Auto_models={
     # 'CC': 'cc', 'Coccinelle': 'coccinelle', 'Corrado': 'corrado', 'Crafter': 'crafter', 'Cross Touran': 'cross-touran',
     # 'Derby': 'derby', 'Eos': 'eos', 'Escarabajo': 'escarabajo', 'Fox': 'fox', 'Golf(tous)': 'golf-(tous)',
     # 'Cross Golf': 'cross-golf', 'e-Golf': 'e-golf', 'Golf': 'golf', 'Golf Cabriolet': 'golf-cabriolet', 'Golf GTD': 'golf-gtd',
-    'Golf GTE': 'golf-gte', 'Golf GTI': 'golf-gti', 'Golf Plus': 'golf-plus', 'Golf R': 'golf-r', 'Golf Sportsvan': 'golf-sportsvan',
-    'Golf Variant': 'golf-variant',
-      'Grand California': 'grand-california',
-     'ID.Buzz (tous)': 'id.-buzz-(tous)', 'ID Buzz': 'id.-buzz',
-    'ID.Buzz Cargo': 'id.-buzz-cargo', 'ID.3': 'id.3', 'ID.4': 'id.4', 'ID.5': 'id.5', 'ID.6': 'id.6', 'ID.7': 'id.7',
-    'lltis': 'lltis', 'Jetta': 'jetta', 'Käfer': 'käfer', 'Karmann Ghia': 'karmann-ghia', 'Kever': 'kever',
-    'L80': 'l80', 'LT': 'lt', 'Lupo': 'lupo', 'Maggiolino': 'maggiolino', 'New Beetle': 'new-beetle',
-    'Passat (tous)': 'passat-(tous)', 'Passat': 'passat', 'Passat Alltrack': 'passat-alltrack', 'Passat CC': 'passat-cc',
-    'Passat Variant': 'passat-variant', 'Phaeton': 'phaeton', 'Pointer': 'pointer', 'Polo (tous)': 'polo-(tous)',
+    # 'Golf GTE': 'golf-gte', 'Golf GTI': 'golf-gti', 'Golf Plus': 'golf-plus', 'Golf R': 'golf-r', 'Golf Sportsvan': 'golf-sportsvan',
+    # 'Golf Variant': 'golf-variant',
+    #   'Grand California': 'grand-california',
+    #  'ID.Buzz (tous)': 'id.-buzz-(tous)', 'ID Buzz': 'id.-buzz',
+    # 'ID.Buzz Cargo': 'id.-buzz-cargo', 'ID.3': 'id.3', 'ID.4': 'id.4', 'ID.5': 'id.5', 'ID.6': 'id.6', 'ID.7': 'id.7',
+    # 'lltis': 'lltis', 'Jetta': 'jetta', 'Käfer': 'käfer', 'Karmann Ghia': 'karmann-ghia', 'Kever': 'kever',
+    # 'L80': 'l80', 'LT': 'lt', 'Lupo': 'lupo', 'Maggiolino': 'maggiolino', 'New Beetle': 'new-beetle',
+    # 'Passat (tous)': 'passat-(tous)', 'Passat': 'passat', 'Passat Alltrack': 'passat-alltrack', 'Passat CC': 'passat-cc',
+    # 'Passat Variant': 'passat-variant', 'Phaeton': 'phaeton', 
+    'Pointer': 'pointer', 'Polo (tous)': 'polo-(tous)',
     'Polo': 'polo', 'Polo Cross': 'polo-cross', 'Polo GTI': 'polo-gti', 'Polo Plus': 'polo-plus', 'Polo R WRC': 'polo-r-wrc',
     'Polo Sedan': 'polo-sedan', 'Polo Variant': 'polo-variant', 'Routan': 'routan', 'Santana': 'santana', 'Scirocco': 'scirocco',
     'Sharan': 'sharan', 'T-Cross': 't-cross', 'T-Roc': 't-roc', 'T1': 't1', 'T2': 't2', 'T3 (tous)': 't3-(tous)',
@@ -411,7 +412,7 @@ Auto_models={
 
 AllModels = [[i, j] for i in Auto_models.keys() for j in Auto_models[i].keys()]
 
-print(AllModels.index(['volkswagen','Grand California']))
+# print(AllModels.index(['volkswagen','Grand California']))
 
 
-# ScrappingApp/OasisScrapping/watchdog.sh
+# 0 * * * * /root/ScrappingApp/OasisScrapping/watchdog.sh

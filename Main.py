@@ -15,6 +15,7 @@ AllInfos={}
 LastModel=[]
 myToken=login()
 lastModelIndex=0
+actualModelIndex=0
 
 
     
@@ -82,7 +83,7 @@ for marque in dict_Marques_Names.keys():
             # OnlineAutos.update(ModelAllInfos)
             # print('nouvelle longueur normalement :',len(OnlineAutos))
             
-            updateAllAutos(ModelAllInfos,myToken,ActuelModel)
+            updateAllAutos(ModelAllInfos,myToken,actualModelIndex)
             
         # else:
         #     print(f"Il n'y a pas de véhicule de la marque {marque} et modèle {model} disponible ")
