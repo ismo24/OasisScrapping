@@ -46,7 +46,7 @@ for marque in dict_Marques_Names.keys():
         print("actuelIndex",actualModelIndex)
         
         #Si l'indice actuel est antérieur au précédent on passe au modèle suivant:
-        if actualModelIndex < lastModelIndex:
+        if actualModelIndex <= lastModelIndex:
             print("modèle déja enregistré on passe au suivant")
             continue
 
