@@ -80,7 +80,7 @@ for marque in dict_Marques_Names.keys():
                 ModelAllInfos[autoId]["myEnergieData"]=Energie_Data_Finder(auto_soup)
                 ModelAllInfos[autoId]["myEquipement"]=Equipment_Data_Finder(auto_soup)
                 ModelAllInfos[autoId]["myColorData"]=Color_Data_Finder(auto_soup)
-                ModelAllInfos[autoId]["marque"]=dict_Marques_Names[marque]
+                ModelAllInfos[autoId]["mark"]=dict_Marques_Names[marque]
                 ModelAllInfos[autoId]["model"]=realmodelName
                 
                 
