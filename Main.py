@@ -5,10 +5,10 @@ import os
 from bs4 import BeautifulSoup
 from Constants import dict_Marques_Names,Auto_models
 from ScrapingFunctions import ModelsInfosFinder,price_finder,Infos_generales_Finder,Basic_Data_Finder,Historical_Data_Finder,Technical_Data_Finder,Energie_Data_Finder,Equipment_Data_Finder,Color_Data_Finder
-from DataBaseFunctions import getAllAutos,updateAllAutos
+# from DataBaseFunctions import getAllAutos,updateAllAutos
 from Authenticate import sign_up,login
 from Constants import AllModels
-
+from SqlFunctions import retrieve_to_add_autos,retrieve_to_delete_autos,insert_cars,delete_cars,create_table
 
 
 AllInfos={}
@@ -17,25 +17,16 @@ myToken=login()
 lastModelIndex=0
 actualModelIndex=0
 
-
-    
+#Create sql cars database
+create_table()   
 
 for marque in dict_Marques_Names.keys():
     marqueKey=f"{marque}"
     for realmodelName,model in Auto_models[marqueKey].items():
         print("ActuelModel",[marque,realmodelName])
-        # Indexer la valeur du dernier modèle terminé 
-        # Charger le fichier JSON
-        # Check if the file exists
-        file_path = 'progression.json'
-        if not os.path.exists(file_path):
-            # Create the file with initial content
-            print("the file don't exist")
-            with open(file_path, 'w') as file:
-                json.dump({"index": 6}, file)
 
         # Now read the file
-        with open(file_path, 'r') as file:
+        with open('progression.json', 'r') as file:
             data = json.load(file)
             lastModelIndex = data["index"]
         print("lastregisredIndex",lastModelIndex)
@@ -54,9 +45,25 @@ for marque in dict_Marques_Names.keys():
         url_to_scrape=f"https://www.autoscout24.fr/lst/{marque}/{model}?atype=C&cy=D&damaged_listing=exclude&fregfrom=2005&powertype=kw&pricefrom=3000&page=1"
         ModelAllInfos=ModelsInfosFinder(url_to_scrape)
 
+        #Enregistrer l'ensemble des Ids dans une liste
+        auto_ids=[i for i in ModelAllInfos.keys()]
+
+        # Déterminer la liste des nouvelles voitures à ne pas chercher et à celles à chercher et ajouter
+        autos_not_to_search,autos_to_add=retrieve_to_add_autos(auto_ids)
+        # Déterminer la liste des anciennes voitures à enlever
+        autos_to_delete=retrieve_to_delete_autos(auto_ids,[marque,model])
+
+        #Supprimer des voitures à enlever si y'en a:
+        delete_cars(autos_to_delete)
+
+
         if ModelAllInfos:
+            #supprimer toutes les entrées à ne pas chercher
+            for id in autos_not_to_search:
+                del ModelAllInfos[id]
+
             print("Debut de la recherche des informations par véhicules")
-            for autoId in ModelAllInfos.keys():
+            for autoId in autos_to_add:
                 # print("autoId :",autoId)
                 auto_url = f"https://www.autoscout24.fr/offres/{autoId}"
                 auto_response = requests.get(auto_url)
@@ -71,19 +78,20 @@ for marque in dict_Marques_Names.keys():
                 ModelAllInfos[autoId]["myEnergieData"]=Energie_Data_Finder(auto_soup)
                 ModelAllInfos[autoId]["myEquipement"]=Equipment_Data_Finder(auto_soup)
                 ModelAllInfos[autoId]["myColorData"]=Color_Data_Finder(auto_soup)
-                ModelAllInfos[autoId]["marque"]=marque
+                ModelAllInfos[autoId]["marque"]=dict_Marques_Names[marque]
                 ModelAllInfos[autoId]["model"]=realmodelName
                 
-                # print("nouveau vehicule :",ModelAllInfos[autoId])
                 
-            OnlineAutos=getAllAutos()
-            print("ancien nombre de voitures :",len(OnlineAutos))
-            print(f"voitures à ajouter {marque} :",len(ModelAllInfos))
+                
+            # OnlineAutos=getAllAutos()
+            # print("ancien nombre de voitures :",len(OnlineAutos))
+            # print(f"voitures à ajouter {marque} :",len(ModelAllInfos))
             # New_dict={**OnlineAutos,**ModelAllInfos}
             # OnlineAutos.update(ModelAllInfos)
             # print('nouvelle longueur normalement :',len(OnlineAutos))
-            
-            updateAllAutos(ModelAllInfos,myToken,actualModelIndex)
+            # updateAllAutos(ModelAllInfos,myToken,actualModelIndex)
+            insert_cars(ModelAllInfos,actualModelIndex)
+
             
         # else:
         #     print(f"Il n'y a pas de véhicule de la marque {marque} et modèle {model} disponible ")
