@@ -45,19 +45,21 @@ for marque in dict_Marques_Names.keys():
         url_to_scrape=f"https://www.autoscout24.fr/lst/{marque}/{model}?atype=C&cy=D&damaged_listing=exclude&fregfrom=2005&powertype=kw&pricefrom=3000&page=1"
         ModelAllInfos=ModelsInfosFinder(url_to_scrape)
 
-        #Enregistrer l'ensemble des Ids dans une liste
-        auto_ids=[i for i in ModelAllInfos.keys()]
-
-        # Déterminer la liste des nouvelles voitures à ne pas chercher et à celles à chercher et ajouter
-        autos_not_to_search,autos_to_add=retrieve_to_add_autos(auto_ids)
-        # Déterminer la liste des anciennes voitures à enlever
-        autos_to_delete=retrieve_to_delete_autos(auto_ids,[marque,model])
-
-        #Supprimer des voitures à enlever si y'en a:
-        delete_cars(autos_to_delete)
+        
 
 
         if ModelAllInfos:
+            #Enregistrer l'ensemble des Ids dans une liste
+            auto_ids=[i for i in ModelAllInfos.keys()]
+
+            # Déterminer la liste des nouvelles voitures à ne pas chercher et à celles à chercher et ajouter
+            autos_not_to_search,autos_to_add=retrieve_to_add_autos(auto_ids)
+            # Déterminer la liste des anciennes voitures à enlever
+            autos_to_delete=retrieve_to_delete_autos(auto_ids,[marque,model])
+
+            #Supprimer des voitures à enlever si y'en a:
+            delete_cars(autos_to_delete)
+
             #supprimer toutes les entrées à ne pas chercher
             for id in autos_not_to_search:
                 del ModelAllInfos[id]
