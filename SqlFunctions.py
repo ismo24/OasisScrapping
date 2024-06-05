@@ -90,7 +90,7 @@ def insert_cars (all_infos,actualModelIndex):
         INSERT INTO cars (webid, mark, model, price, generalValues, basicData,historicalData,technicaData,energieData,equipement,colorData,image_urls) 
         VALUES (%s, %s, %s, %s, %s, %s,%s, %s, %s, %s, %s, %s);
         """
-        InsertionsLength=len(actualModelIndex)
+        InsertionsLength=len(all_infos)
         
         for car_id in all_infos.keys():
             values=(
