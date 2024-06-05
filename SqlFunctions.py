@@ -197,9 +197,9 @@ def retrieve_to_delete_autos(ids,searchValues):
         cursor = connection.cursor()
         # Prepare the SQL query search for corresponding autos
         
-        query = f"SELECT webid FROM cars WHERE mark = {searchValues[0]} AND model = {searchValues[1]};"
+        query = f"SELECT webid FROM cars WHERE mark = %s AND model = %s;"
 
-        cursor.execute(query)
+        cursor.execute(query,(searchValues[0], searchValues[1]))
         
         # Fetch all results
         result = cursor.fetchall()
