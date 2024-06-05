@@ -72,14 +72,14 @@ for marque in dict_Marques_Names.keys():
                 auto_data = auto_response.text
                 # Parse le contenu HTML avec BeautifulSoup
                 auto_soup = BeautifulSoup(auto_data, 'html.parser')
-                ModelAllInfos[autoId]["myPrice"]=price_finder(auto_soup)
-                ModelAllInfos[autoId]["myGeneralValues"]=Infos_generales_Finder(auto_soup)
-                ModelAllInfos[autoId]["myBasicData"]=Basic_Data_Finder(auto_soup)
-                ModelAllInfos[autoId]["myHistoricalData"]=Historical_Data_Finder(auto_soup)
-                ModelAllInfos[autoId]["myTechnicaData"]=Technical_Data_Finder(auto_soup)
-                ModelAllInfos[autoId]["myEnergieData"]=Energie_Data_Finder(auto_soup)
-                ModelAllInfos[autoId]["myEquipement"]=Equipment_Data_Finder(auto_soup)
-                ModelAllInfos[autoId]["myColorData"]=Color_Data_Finder(auto_soup)
+                ModelAllInfos[autoId]["price"]=price_finder(auto_soup)
+                ModelAllInfos[autoId]["generalValues"]=Infos_generales_Finder(auto_soup)
+                ModelAllInfos[autoId]["basicData"]=Basic_Data_Finder(auto_soup)
+                ModelAllInfos[autoId]["historicalData"]=Historical_Data_Finder(auto_soup)
+                ModelAllInfos[autoId]["technicaData"]=Technical_Data_Finder(auto_soup)
+                ModelAllInfos[autoId]["energieData"]=Energie_Data_Finder(auto_soup)
+                ModelAllInfos[autoId]["equipement"]=Equipment_Data_Finder(auto_soup)
+                ModelAllInfos[autoId]["colorData"]=Color_Data_Finder(auto_soup)
                 ModelAllInfos[autoId]["mark"]=dict_Marques_Names[marque]
                 ModelAllInfos[autoId]["model"]=realmodelName
                 
