@@ -94,7 +94,7 @@ def insert_cars (all_infos,actualModelIndex):
         
         for car_id in all_infos.keys():
             values=(
-            all_infos[car_id]["id"],
+            car_id,
             all_infos[car_id]["mark"],
             all_infos[car_id]["model"],
             all_infos[car_id]["price"],
