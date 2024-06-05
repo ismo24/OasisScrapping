@@ -18,7 +18,7 @@ lastModelIndex=0
 actualModelIndex=0
 
 #Create sql cars database
-delete_table()
+delete_table("cars")
 create_table()   
 
 for marque in dict_Marques_Names.keys():

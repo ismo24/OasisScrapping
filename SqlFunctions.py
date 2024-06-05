@@ -60,10 +60,10 @@ def create_table():
             generalValues TEXT,
             basicData TEXT,
             historicalData TEXT,
-            technicaData  VARCHAR(200),
-            energieData  VARCHAR(200),
+            technicaData  TEXT,
+            energieData  TEXT,
             equipement  TEXT,
-            colorData  VARCHAR(200),
+            colorData  TEXT,
             image_urls TEXT
         );
         """
