@@ -8,7 +8,7 @@ from ScrapingFunctions import ModelsInfosFinder,price_finder,Infos_generales_Fin
 # from DataBaseFunctions import getAllAutos,updateAllAutos
 from Authenticate import sign_up,login
 from Constants import AllModels
-from SqlFunctions import retrieve_to_add_autos,retrieve_to_delete_autos,insert_cars,delete_cars,create_table
+from SqlFunctions import retrieve_to_add_autos,retrieve_to_delete_autos,insert_cars,delete_cars,create_table,delete_table
 
 
 AllInfos={}
@@ -18,6 +18,7 @@ lastModelIndex=0
 actualModelIndex=0
 
 #Create sql cars database
+delete_table()
 create_table()   
 
 for marque in dict_Marques_Names.keys():
