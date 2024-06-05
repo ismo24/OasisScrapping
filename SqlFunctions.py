@@ -80,6 +80,24 @@ def create_table():
         print(f"The error '{e}' occurred")
 
 
+def delete_table(table_name):
+    try:
+        connection = create_connection()
+        cursor = connection.cursor()
+        # Prepare the SQL query to drop the table
+        query = f"DROP TABLE IF EXISTS {table_name};"
+        
+        cursor.execute(query)
+        connection.commit()
+        print(f"Table `{table_name}` deleted successfully")
+    except Error as e:
+        print(f"The error '{e}' occurred")
+
+    finally:
+        if connection and connection.is_connected():
+            connection.close()
+            print("Connection to MySQL DB closed")
+
 
 # function to insert a list of cars informations
 def insert_cars (all_infos,actualModelIndex):
