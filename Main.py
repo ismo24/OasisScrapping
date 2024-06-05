@@ -13,7 +13,7 @@ from SqlFunctions import retrieve_to_add_autos,retrieve_to_delete_autos,insert_c
 
 AllInfos={}
 LastModel=[]
-myToken=login()
+# myToken=login()
 lastModelIndex=0
 actualModelIndex=0
 
