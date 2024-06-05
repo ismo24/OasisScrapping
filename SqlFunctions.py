@@ -53,7 +53,7 @@ def create_table():
         create_table_query = """
         CREATE TABLE IF NOT EXISTS cars (
             id INT AUTO_INCREMENT PRIMARY KEY,
-            webid VARCHAR(30) UNIQUE,
+            webid VARCHAR(50) UNIQUE,
             mark VARCHAR(20),
             model VARCHAR(20),
             price DECIMAL(10, 2),
