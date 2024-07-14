@@ -38,7 +38,7 @@ def generate_and_insert_data():
             "action":action ,
             "data": {
                 "mark": "BMW",
-                "model": "ModelE",
+                "model": "ModelD",
                 "year": 2012
             }}
 

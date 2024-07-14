@@ -60,7 +60,7 @@ def update_global_stat(infos):
         else:
             modifyingIndex=["clicks", "favorites", "messages", "calls"].index(action)
             print("receivedValues :",year_model_data)
-            prev_value=year_model_data[modifyingIndex+3]
+            prev_value=year_model_data[modifyingIndex+4]
             model_year_id=year_model_data[0]
             update_existing_global_stat_year_model(connection,model_year_id,action,prev_value)
 
