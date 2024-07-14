@@ -1,5 +1,5 @@
 import random
-from GlobalSqlStatsManager import create_global_stat_table,add_new_global_stat_year_model,update_global_stat,update_existing_global_stat_year_model,display_all_global_stats
+from GlobalSqlStatsManager import create_global_stat_table,add_new_global_stat_year_model,update_global_stat,update_existing_global_stat_year_model,display_all_global_stats,delete_all_values_from_global_stats
 
 
 marks = ["Toyota", "Honda"]
@@ -44,6 +44,8 @@ def generate_and_insert_data():
 
         update_global_stat(infos)
 
-generate_and_insert_data()
+# generate_and_insert_data()
+
+delete_all_values_from_global_stats()
 
 display_all_global_stats()

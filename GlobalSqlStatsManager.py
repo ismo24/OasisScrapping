@@ -226,4 +226,26 @@ def display_all_global_stats():
 
 
 
-# Créer une base de données qui reccueuile les statistiques globales des clients basés sur leurs recherches
+def delete_all_values_from_global_stats():
+    try:
+        # Create connection and connect to cursor
+        connection = create_connection()
+        cursor = connection.cursor()
+
+        # Construct the query to delete all rows from GLOBAL_STATS
+        query = "DELETE FROM GLOBAL_STATS"
+
+        # Execute the query
+        cursor.execute(query)
+        connection.commit()
+
+        print("All values deleted successfully")
+
+    except Error as e:
+        print(f"The error '{e}' occurred")
+    finally:
+        if cursor:
+            cursor.close()
+        if connection.is_connected():
+            connection.close()
+        print("Connection to MySQL DB closed")
