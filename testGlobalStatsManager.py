@@ -34,6 +34,6 @@ def generate_and_insert_data():
 
         update_global_stat(infos)
 
-
+generate_and_insert_data()
 
 display_all_global_stats()
