@@ -2,9 +2,12 @@ import random
 from GlobalSqlStatsManager import create_global_stat_table,add_new_global_stat_year_model,update_global_stat,update_existing_global_stat_year_model,display_all_global_stats
 
 
-marks = ["Toyota", "Honda", "Ford", "Chevrolet", "Nissan", "BMW", "Mercedes", "Audi", "Volkswagen", "Hyundai"]
-models = ["ModelA", "ModelB", "ModelC", "ModelD", "ModelE", "ModelF", "ModelG", "ModelH", "ModelI", "ModelJ"]
-years = [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022]
+marks = ["Toyota"]
+# , "Honda", "Ford", "Chevrolet", "Nissan", "BMW", "Mercedes", "Audi", "Volkswagen", "Hyundai"
+models = ["ModelA"]
+# , "ModelB", "ModelC", "ModelD", "ModelE", "ModelF", "ModelG", "ModelH", "ModelI", "ModelJ"
+years = [2010, 2011, 2012]
+# , 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022
 
 
 
