@@ -1,5 +1,5 @@
 import random
-from GlobalSqlStatsManager import create_global_stat_table,add_new_global_stat_year_model,update_global_stat,update_existing_global_stat_year_model
+from GlobalSqlStatsManager import create_global_stat_table,add_new_global_stat_year_model,update_global_stat,update_existing_global_stat_year_model,display_all_global_stats
 
 
 marks = ["Toyota", "Honda", "Ford", "Chevrolet", "Nissan", "BMW", "Mercedes", "Audi", "Volkswagen", "Hyundai"]
@@ -17,7 +17,7 @@ create_global_stat_table()
 
 #Insérer 20 voitures à la suite
 def generate_and_insert_data():
-    for _ in range(20) :
+    for _ in range(50) :
         mark = random.choice(marks)
         model = random.choice(models)
         year = random.choice(years)
@@ -33,3 +33,7 @@ def generate_and_insert_data():
         }
 
         update_global_stat(infos)
+
+
+
+display_all_global_stats()

@@ -185,7 +185,41 @@ def add_new_global_stat_year_model(connection, infos):
 
 
 
+def display_all_global_stats():
+    try:
+        # Create connection and connect to cursor
+        connection = create_connection()
+        cursor = connection.cursor()
 
+        # Construct the query to fetch all columns from GLOBAL_STATS
+        query = """
+        SELECT * FROM GLOBAL_STATS
+        """
+
+        # Execute the query
+        cursor.execute(query)
+
+        # Fetch all rows
+        results = cursor.fetchall()
+
+        # Fetch column names
+        column_names = [i[0] for i in cursor.description]
+
+        # Print column names
+        print(" | ".join(column_names))
+
+        # Print each row
+        for row in results:
+            print(" | ".join(str(col) for col in row))
+
+    except Error as e:
+        print(f"The error '{e}' occurred")
+    finally:
+        if cursor:
+            cursor.close()
+        if connection.is_connected():
+            connection.close()
+        print("Connection to MySQL DB closed")
 
 
 
