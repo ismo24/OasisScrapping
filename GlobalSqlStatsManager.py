@@ -59,6 +59,7 @@ def update_global_stat(infos):
             add_new_global_stat_year_model(connection, infos)
         else:
             modifyingIndex=["clicks", "favorites", "messages", "calls"].index(action)
+            print("receivedValues :",year_model_data)
             prev_value=year_model_data[modifyingIndex+3]
             model_year_id=year_model_data[0]
             update_existing_global_stat_year_model(connection,model_year_id,action,prev_value)
@@ -113,6 +114,7 @@ def update_existing_global_stat_year_model(connection, model_year_id, action, pr
     try:
         cursor = connection.cursor()
 
+        print("model_year_id :",model_year_id,"action :",action,"prev_value :",prev_value)
         # Prepare the query with placeholders
         query = f"""
         UPDATE GLOBAL_STATS 
