@@ -125,6 +125,8 @@ def update_existing_global_stat_year_model(connection, model_year_id, action, pr
         # Calculate the new value
         new_value = prev_value + 1
 
+        print("new_value :",new_value)
+
         # Execute the query with parameterized values
         cursor.execute(query, (new_value, model_year_id))
         connection.commit()
