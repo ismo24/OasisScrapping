@@ -15,17 +15,17 @@ def create_global_stat_table():
             id INT AUTO_INCREMENT PRIMARY KEY,
             mark VARCHAR(20),
             model VARCHAR(20),
-            year  YEAR,
+            year YEAR,
             clicks INT,
             favorites INT,
             messages INT,
-            calls INT,
+            calls INT
         );
         """
         # Execute the query
         cursor.execute(create_table_query)
         connection.commit()
-        print(" table created successfully")
+        print("Table created successfully")
 
         if connection.is_connected():
             connection.close()
@@ -33,7 +33,6 @@ def create_global_stat_table():
 
     except Error as e:
         print(f"The error '{e}' occurred")
-
 
 
 
