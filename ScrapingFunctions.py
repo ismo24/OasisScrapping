@@ -7,6 +7,10 @@ import re
 from bs4 import BeautifulSoup
 
 
+
+
+
+
 def ModelsInfosFinder(url_to_scrape):
     try:
         

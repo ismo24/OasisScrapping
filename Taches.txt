@@ -1,0 +1,28 @@
+1.Supprimer pendant le scapping les valeurs suivantes des véhicules:
+Dans BasicData: Numero d'annonce et numero de la touche
+
+
+
+
+
+Marque  Modèle  Année     nombre_de_favoris    nombre_de_clics   nombre_d'appels  nombre_de_messageWhatsapp
+
+
+
+
+
+
+
+
+
+
+
+Carburant  Prix 
+
+
+types d'actions: click favoris 
+
+
+
+
+
