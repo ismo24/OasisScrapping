@@ -116,64 +116,67 @@ def delete_table(table_name):
 
 
 # function to insert a list of cars informations
-def insert_cars (all_infos,actualModelIndex):
+import json
+from mysql.connector import Error
+
+def insert_cars(all_infos, actualModelIndex):
     try:
         connection = create_connection()
         cursor = connection.cursor()
         car_query = """                                                                             
-        INSERT INTO cars (webid, mark, model, price, annee, pays, transmission, kilometrage, carburant, carosserie, moteur, portes, sieges, color, generalValues, basicData, historicalData, technicaData, energieData, equipement, colorData, image_urls,clics,clicsDates,messages,messagesDates,calls,callsDates) 
+        INSERT INTO cars (webid, mark, model, price, annee, pays, transmission, kilometrage, carburant, carosserie, moteur, portes, sieges, color, generalValues, basicData, historicalData, technicaData, energieData, equipement, colorData, image_urls, clics, clicsDates, messages, messagesDates, calls, callsDates) 
         VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s);
         """
-        InsertionsLength=len(all_infos)
+        InsertionsLength = len(all_infos)
         
-        for car_id in all_infos.keys():
-            values=(
-            car_id,
-            all_infos[car_id]["mark"] if all_infos[car_id]["mark"] else None,
-            all_infos[car_id]["model"] if all_infos[car_id]["model"] else None,
-            all_infos[car_id]["price"] if all_infos[car_id]["price"] else None,
-            all_infos[car_id]["annee"] if all_infos[car_id]["annee"] else None,
-            all_infos[car_id]["pays"] if all_infos[car_id]["pays"] else None,
-            all_infos[car_id]["transmission"] if all_infos[car_id]["transmission"] else None,
-            all_infos[car_id]["kilometrage"] if all_infos[car_id]["kilometrage"] else None,
-            all_infos[car_id]["carburant"] if  all_infos[car_id]["carburant"] else None,
-            all_infos[car_id]["carosserie"] if all_infos[car_id]["carosserie"] else None,
-            all_infos[car_id]["moteur"] if all_infos[car_id]["moteur"] else None,
-            all_infos[car_id]["portes"] if all_infos[car_id]["portes"] else None,
-            all_infos[car_id]["sieges"] if all_infos[car_id]["sieges"] else None,
-            all_infos[car_id]["color"] if all_infos[car_id]["color"] else None,
-
-
-            json.dumps(all_infos[car_id]["generalValues"]) if all_infos[car_id]["generalValues"] else None,
-            json.dumps(all_infos[car_id]["basicData"]) if all_infos[car_id]["basicData"] else None,
-            json.dumps(all_infos[car_id]["historicalData"]) if all_infos[car_id]["historicalData"] else None,
-            json.dumps(all_infos[car_id]["technicaData"]) if all_infos[car_id]["technicaData"] else None,
-            json.dumps(all_infos[car_id]["energieData"]) if all_infos[car_id]["energieData"] else None,
-            json.dumps(all_infos[car_id]["equipement"]) if all_infos[car_id]["equipement"] else None,
-            json.dumps(all_infos[car_id]["colorData"]) if all_infos[car_id]["colorData"] else None,
-            json.dumps(all_infos[car_id]["image_urls"]) if all_infos[car_id]["image_urls"] else None,
-            0,
-            "[]",
-            0,
-             "[]", 
-              0,
-             "[]",    
+        for car_id, car_info in all_infos.items():
+            values = (
+                car_id,
+                car_info.get("mark"),
+                car_info.get("model"),
+                car_info.get("price"),
+                car_info.get("annee"),
+                car_info.get("pays"),
+                car_info.get("transmission"),
+                car_info.get("kilometrage"),
+                car_info.get("carburant"),
+                car_info.get("carosserie"),
+                car_info.get("moteur"),
+                car_info.get("portes"),
+                car_info.get("sieges"),
+                car_info.get("color"),
+                json.dumps(car_info.get("generalValues", [])),
+                json.dumps(car_info.get("basicData", [])),
+                json.dumps(car_info.get("historicalData", [])),
+                json.dumps(car_info.get("technicaData", [])),
+                json.dumps(car_info.get("energieData", [])),
+                json.dumps(car_info.get("equipement", [])),
+                json.dumps(car_info.get("colorData", [])),
+                json.dumps(car_info.get("image_urls", [])),
+                0,
+                "[]",
+                0,
+                "[]", 
+                0,
+                "[]",    
             )
             cursor.execute(car_query, values)
             connection.commit()
-        print(f" {InsertionsLength} autos inserted successfully")
+        print(f"{InsertionsLength} autos inserted successfully")
         if connection.is_connected():
             connection.close()
             print("Connection to MySQL DB closed")
 
-        data={"index": actualModelIndex}
-        print("Index modifié",data["index"])
+        data = {"index": actualModelIndex}
+        print("Index modifié", data["index"])
         # Enregistrer les modifications
         with open('progression.json', 'w') as file:
             json.dump(data, file, indent=4)
     except Error as e:
         print(f"The error '{e}' occurred")
 
+# Example usage
+# insert_cars(ModelAllInfos, actualModelIndex)
 
     
 
