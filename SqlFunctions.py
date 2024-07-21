@@ -47,7 +47,7 @@ def fetch_query(connection, query):
 
 # Writing a create_table_query
 def create_table():
-    try: 
+    try:
         connection = create_connection()
         cursor = connection.cursor()
         create_table_query = """
@@ -58,10 +58,10 @@ def create_table():
             model VARCHAR(20),
             price INT,
             annee DATE,
-            pays  VARCHAR(30),
+            pays VARCHAR(30),
             transmission VARCHAR(20),
             kilometrage INT,
-            carburant  VARCHAR(20),
+            carburant VARCHAR(20),
             carosserie VARCHAR(20),
             moteur VARCHAR(20),
             portes INT,
@@ -70,20 +70,19 @@ def create_table():
             generalValues TEXT,
             basicData TEXT,
             historicalData TEXT,
-            technicaData  TEXT,
-            energieData  TEXT,
-            equipement  TEXT,
-            colorData  TEXT,
+            technicaData TEXT,
+            energieData TEXT,
+            equipement TEXT,
+            colorData TEXT,
             image_urls TEXT,
             clics INT,
             clicsDates TEXT,
-            messages  INT,
+            messages INT,
             messagesDates TEXT,
             calls INT,
-            callsDates TEXT,
+            callsDates TEXT
         );
         """
-        # Execute the query
         cursor.execute(create_table_query)
         connection.commit()
         print("cars table created successfully")
@@ -115,9 +114,7 @@ def delete_table(table_name):
             print("Connection to MySQL DB closed")
 
 
-# function to insert a list of cars informations
-import json
-from mysql.connector import Error
+
 
 def insert_cars(all_infos, actualModelIndex):
     try:
@@ -132,19 +129,19 @@ def insert_cars(all_infos, actualModelIndex):
         for car_id, car_info in all_infos.items():
             values = (
                 car_id,
-                car_info.get("mark"),
-                car_info.get("model"),
-                car_info.get("price"),
-                car_info.get("annee"),
-                car_info.get("pays"),
-                car_info.get("transmission"),
-                car_info.get("kilometrage"),
-                car_info.get("carburant"),
-                car_info.get("carosserie"),
-                car_info.get("moteur"),
-                car_info.get("portes"),
-                car_info.get("sieges"),
-                car_info.get("color"),
+                car_info.get("mark", None),
+                car_info.get("model", None),
+                car_info.get("price", None),
+                car_info.get("annee", None),
+                car_info.get("pays", None),
+                car_info.get("transmission", None),
+                car_info.get("kilometrage", None),
+                car_info.get("carburant", None),
+                car_info.get("carosserie", None),
+                car_info.get("moteur", None),
+                car_info.get("portes", None),
+                car_info.get("sieges", None),
+                car_info.get("color", None),
                 json.dumps(car_info.get("generalValues", [])),
                 json.dumps(car_info.get("basicData", [])),
                 json.dumps(car_info.get("historicalData", [])),
@@ -158,7 +155,7 @@ def insert_cars(all_infos, actualModelIndex):
                 0,
                 "[]", 
                 0,
-                "[]",    
+                "[]"
             )
             cursor.execute(car_query, values)
             connection.commit()
@@ -174,6 +171,7 @@ def insert_cars(all_infos, actualModelIndex):
             json.dump(data, file, indent=4)
     except Error as e:
         print(f"The error '{e}' occurred")
+
 
 # Example usage
 # insert_cars(ModelAllInfos, actualModelIndex)
