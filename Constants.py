@@ -8,12 +8,12 @@
 #  {'ID.6', 'ID.4', 'ID.Buzz Cargo', 'Golf', 'Bus', 'Fox', 'Cross Touran', 'Bora', 'Cross Golf', 'Caddy',
 #    'Eos', 'Golf Variant', 'Golf Cabriolet', 'Golf Sportsvan', 'ID Buzz', 'ID.5',
 #    'Arteon', 'Golf Plus', 'CC', 'e-Golf', 'Crafter', 'Beetle', 'Golf GTD', 'Golf GTE',
-#      'Grand California', 'Atlas', 'ID.3', 'Golf R', 'Amarok', 'Coccinelle', 'Golf GTI'}
+#      'Grand California', 'Atlas', 'ID.3', 'Golf R', 'Amarok', 'Coccinelle', 'Golf GTI'} 'hummer':'HUMMER',
 
 dict_Marques_Names={
 'audi':'Audi','bmw':'BMW', 'ford':'Ford','mercedes-benz':'Mercedes-Benz','opel':'Opel',
  'volkswagen':'Volkswagen','renault':'Renault','honda':'Honda',
- 'hummer':'HUMMER','hyundai':'Hyundai','kia':'Kia','land-rover':'Land Rover','lexus':'Lexus','mazda':'Mazda','mini':'MINI','mitsubishi':'Mitsubishi','nissan':'Nissan',
+ 'hyundai':'Hyundai','kia':'Kia','land-rover':'Land Rover','lexus':'Lexus','mazda':'Mazda','mini':'MINI','mitsubishi':'Mitsubishi','nissan':'Nissan',
  'peugeot':'Peugeot','skoda':'Skoda','suzuki':'Suzuki','toyota':'Toyota','volvo':'Volvo'
 }
 

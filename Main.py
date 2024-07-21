@@ -107,7 +107,7 @@ for marque in dict_Marques_Names.keys():
 
             if len(ModelAllInfos)>2:
                 print(ModelAllInfos)
-                break
+                
             
                 
                 
@@ -122,7 +122,7 @@ for marque in dict_Marques_Names.keys():
             insert_cars(ModelAllInfos,actualModelIndex)
 
             
-        # else:
-        #     print(f"Il n'y a pas de véhicule de la marque {marque} et modèle {model} disponible ")
+        else:
+            print(f"Il n'y a pas de véhicule de la marque {marque} et modèle {model} disponible ")
 
 
