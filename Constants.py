@@ -229,7 +229,7 @@ Auto_models={
     'Partner':'partner', 'Pilot':'pilot', 'Prelude':'prelude', 'Quintet':'quintet', 'Ridgeline':'ridgeline', 'S 2000':'s-2000', 'Saber':'saber', 'Sabre':'sabre', 'Shuttle':'shuttle', 'Sm-x':'sm-x', 'Stepwgn':'stepwgn', 'Stream':'stream', 'Torneo':'torneo', 'ZR-V':'zr-v', 'Autres':'autres'
 },
 
-'hummer':{'H1':'h1','H2':'h2','H3':'h3','Autres':'autres'},
+# 'hummer':{'H1':'h1','H2':'h2','H3':'h3','Autres':'autres'},
 
 'hyundai':{
  'ACCENT':'accent', 'Atos':'atos', 'AVENTE':'avente', 'AZERA':'azera', 'BAYON':'bayon', 'Coupe':'coupe', 'CRETA':'creta', 'ELANTRA':'elantra', 'Equus':'equus', 'Excel':'excel', 'Galloper':'galloper', 'Genesis':'genesis', 'Genesis Coupe':'genesis-coupe', 'Getz':'getz', 'Grace':'grace',
@@ -357,10 +357,10 @@ Auto_models={
     "Wagon R+": "wagon-r-plus", "X-90": "x-90", "XL-7": "xl-7", "Autres": "autres"
 },
 
-'tesla' : {
-    "Cybertruck": "cybertruck", "Model 3": "model-3", "Model S": "model-s", "Model X": "model-x", 
-    "Model Y": "model-y", "Autres": "autres"
-},
+# 'tesla' : {
+#     "Cybertruck": "cybertruck", "Model 3": "model-3", "Model S": "model-s", "Model X": "model-x", 
+#     "Model Y": "model-y", "Autres": "autres"
+# },
 
 'toyota' : {
     "4-Runner": "4-runner", "Allion": "allion", "Alphard": "alphard", "Altezza": "altezza", "Aristo": "aristo", 
@@ -400,11 +400,6 @@ Auto_models={
     "V90": "v90", "V90 Cross Country": "v90-cross-country", "XC40": "xc40", "XC60": "xc60", 
     "XC70": "xc70", "XC90": "xc90", "Autres": "autres"
 }
-
-
-
-
-
 
 }
 

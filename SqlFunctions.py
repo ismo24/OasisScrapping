@@ -56,7 +56,17 @@ def create_table():
             webid VARCHAR(50) UNIQUE,
             mark VARCHAR(20),
             model VARCHAR(20),
-            price DECIMAL(10, 2),
+            price INT,
+            annee DATE,
+            pays  VARCHAR(30),
+            transmission VARCHAR(20),
+            kilometrage INT,
+            carburant  VARCHAR(20),
+            carosserie VARCHAR(20),
+            moteur VARCHAR(20),
+            portes INT,
+            sieges INT,
+            color VARCHAR(20),
             generalValues TEXT,
             basicData TEXT,
             historicalData TEXT,
@@ -64,7 +74,13 @@ def create_table():
             energieData  TEXT,
             equipement  TEXT,
             colorData  TEXT,
-            image_urls TEXT
+            image_urls TEXT,
+            clics INT,
+            clicsDates TEXT,
+            messages  INT,
+            messagesDates TEXT,
+            calls INT,
+            callsDates TEXT,
         );
         """
         # Execute the query
@@ -104,9 +120,9 @@ def insert_cars (all_infos,actualModelIndex):
     try:
         connection = create_connection()
         cursor = connection.cursor()
-        car_query = """
-        INSERT INTO cars (webid, mark, model, price, generalValues, basicData,historicalData,technicaData,energieData,equipement,colorData,image_urls) 
-        VALUES (%s, %s, %s, %s, %s, %s,%s, %s, %s, %s, %s, %s);
+        car_query = """                                                                             
+        INSERT INTO cars (webid, mark, model, price, annee, pays, transmission, kilometrage, carburant, carosserie, moteur, portes, sieges, color, generalValues, basicData, historicalData, technicaData, energieData, equipement, colorData, image_urls,clics,clicsDates,messages,messagesDates,calls,callsDates) 
+        VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s);
         """
         InsertionsLength=len(all_infos)
         
@@ -116,6 +132,18 @@ def insert_cars (all_infos,actualModelIndex):
             all_infos[car_id]["mark"],
             all_infos[car_id]["model"],
             all_infos[car_id]["price"],
+            all_infos[car_id]["annee"],
+            all_infos[car_id]["pays"],
+            all_infos[car_id]["transmission"],
+            all_infos[car_id]["kilometrage"],
+            all_infos[car_id]["carburant"],
+            all_infos[car_id]["carosserie"],
+            all_infos[car_id]["moteur"],
+            all_infos[car_id]["portes"],
+            all_infos[car_id]["sieges"],
+            all_infos[car_id]["color"],
+
+
             json.dumps(all_infos[car_id]["generalValues"]) if all_infos[car_id]["generalValues"] else None,
             json.dumps(all_infos[car_id]["basicData"]) if all_infos[car_id]["basicData"] else None,
             json.dumps(all_infos[car_id]["historicalData"]) if all_infos[car_id]["historicalData"] else None,
@@ -123,7 +151,13 @@ def insert_cars (all_infos,actualModelIndex):
             json.dumps(all_infos[car_id]["energieData"]) if all_infos[car_id]["energieData"] else None,
             json.dumps(all_infos[car_id]["equipement"]) if all_infos[car_id]["equipement"] else None,
             json.dumps(all_infos[car_id]["colorData"]) if all_infos[car_id]["colorData"] else None,
-            json.dumps(all_infos[car_id]["image_urls"]) if all_infos[car_id]["image_urls"] else None      
+            json.dumps(all_infos[car_id]["image_urls"]) if all_infos[car_id]["image_urls"] else None,
+            0,
+            "[]",
+            0,
+             "[]", 
+              0,
+             "[]",    
             )
             cursor.execute(car_query, values)
             connection.commit()

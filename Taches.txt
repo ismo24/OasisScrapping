@@ -3,25 +3,60 @@ Dans BasicData: Numero d'annonce et numero de la touche
 
 
 
-
-
-Marque  Modèle  Année     nombre_de_favoris    nombre_de_clics   nombre_d'appels  nombre_de_messageWhatsapp
-
-
-
+Populaires DataBases==Va chercher dans la base de données concernant les vehicules les plus recherchés
+Recommendations==Va chercher
+Vos recherches== Va chercher dans les recherches déja faites par le client et sa base de donnée personnalisé
 
 
 
+Donc en termesde bases de données il nous reste à créer:
+1.une base de données enregstrant tous les identifiants des clients et s'assurer que les identifiants sont uniques,
+lorsqu'un client se connecte nouvellement ou n'a pas de d'identifiants on lui créée un nouvel identifiant et on le stocke
+en ligne
+
+ID      specid
+
+1      zdfghh1234
+2       adfvnpevh_
+
+
+
+2.Une base de données contenant les  préférences de véhicules pour chaque clients basés sur les clicks,favorites,recherches 
+
+ID      specid                   clicks                                 favorites                            recherches
+
+1      zdfghh1234         [listes des id des vehicules cliqués]  [listes des id des vehicules cliqués]      liste des recherches(les recherches seront des objets stockables avec les valeurs recherchées)
+2       adfvnpevh_
+
+
+
+3.Une base de données contenant les 50 véhicules les mieux adaptés aux clients de manière générale et dans la catégorie Populaires
+Cette base de donnée sera initialisée entièrement par moi et ne sera modifiée que lorsque on aura plus de 100 entrées pour GlobalStats
+
+id    vehiculesId ...   ....  (Elles doit avoir les memes caractéristiques que la database pour l'enregistrement des valeurs du véhicules  )
 
 
 
 
 
-Carburant  Prix 
 
 
-types d'actions: click favoris 
 
+
+
+4.Une base de données  contenant les 50 véhicules les mieux adaptés basée sur les recherches du client et clicks et
+Cette base de donnée ne sera affichée que lorque le client aura assez fait des recherches  
+
+
+5.Une base de données conteant les 50 véhicules les moins chers pour le client par marque dont 2 par marques
+
+Les bases de données concernant les enregistrements des clients sera gerée via un serverur node et en fonction du traffic
+
+
+ 
+
+ Donc on va créer 
+ 
 
 
 

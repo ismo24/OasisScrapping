@@ -5,6 +5,7 @@ import json
 import requests
 import re
 from bs4 import BeautifulSoup
+from datetime import datetime
 
 
 
@@ -87,13 +88,37 @@ def price_finder(soup):
 
         # Enlever tous les caractères non numériques et convertir le tout en entier
         price = int(re.sub(r'\D', '', price_span.text))
-        return price
+
+
+        def calculate_price(value):
+            converted_price = (int(((value / 10) * 655) / 1000)) * 1000
+            end_price = converted_price
+
+            if converted_price < 3000000:
+                end_price += 1200000
+            elif converted_price < 8000_000:
+                end_price += 1500000
+            elif converted_price < 12000000:
+                end_price += 2000000
+            elif converted_price < 20000000:
+                end_price += 2500000
+            elif converted_price < 30000000:
+                end_price += 3000000
+            else:
+                end_price += 4000000
+            
+            print("clientPrice :",end_price)
+            return end_price
+
+
+
+        return calculate_price(price)
 
     except ValueError as ve:
-        print(f"Erreur de valeur : {ve}")
+        print(f"Erreur de valeur price_finder: {ve}")
         return False
     except Exception as e:
-        print(f"Erreur inattendue : {e}")
+        print(f"Erreur inattendue price_finder: {e}")
         return False
 
 def Infos_generales_Finder(soup):
@@ -107,6 +132,7 @@ def Infos_generales_Finder(soup):
         titles = []
         values = []
         Infos_finales=[]
+        AllInfos={}
 
         # Trouve toutes les div dont la classe contient 'Title'
         for div in Infos_Generales_container.find_all('div', class_=lambda value: value and 'Title' in value):
@@ -127,8 +153,42 @@ def Infos_generales_Finder(soup):
             if titles[i]!='Vendeur':
                 Infos_finales.append([titles[i],values[i]])
 
+        def transform_to_integer(value):
+            # Enlever les caractères non numériques
+            value = ''.join(filter(str.isdigit, value))
+            # Convertir en entier
+            return int(value)
+        
+        def parse_date(value):
+            formats = ["%m/%Y", "%d/%m/%Y", "%Y-%m-%d", "%d-%m-%Y", "%Y/%m/%d"]
+            
+            # Essayer chaque format jusqu'à ce que l'un d'entre eux fonctionne
+            for fmt in formats:
+                try:
+                    date_obj = datetime.strptime(value, fmt).date()
+                    return date_obj
+                except ValueError:
+                    continue
+            
+            # Si aucun format ne fonctionne, lever une exception
+            return None
+
         if Infos_finales:
-            return Infos_finales
+            for value in Infos_finales:
+                AllInfos["Infos_finales"]=Infos_finales
+                if value[0]=="Kilométrage":
+                    kilometrage=transform_to_integer(value[1])
+                    AllInfos["Kilométrage"]=kilometrage
+                if value[0]=="Transmission":
+                    AllInfos["Transmission"]=value[1]
+                if value[0]=="Année":
+                    date_obj = parse_date(value[1])
+                    AllInfos["Année"]=date_obj  
+                if value[0]=="Carburant":
+                    AllInfos["Carburant"]=value[1]
+                
+
+            return AllInfos
         else:
             return False
     
@@ -153,6 +213,7 @@ def Basic_Data_Finder(soup):
         titles = []
         values = []
         Infos_finales=[]
+        AllInfos={}  
 
         # Trouve toutes les dt dont la classe contient 'DataGrid_defaultDtStyle__soJ6R'
         for dt in Basic_Data_container.find_all('dt', class_='DataGrid_defaultDtStyle__soJ6R'):
@@ -171,7 +232,20 @@ def Basic_Data_Finder(soup):
 
         
         if Infos_finales:
-            return Infos_finales
+            AllInfos["Infos_finales"]=Infos_finales
+            for value in Infos_finales:
+                if value[0]=="Carrosserie":
+                    AllInfos["Carrosserie"]=value[1]  
+                if value[0]=="Type de moteur":
+                    AllInfos["Type de moteur"]=value[1]
+                if value[0]=="Sièges":
+                    AllInfos["Sièges"]=value[1]  
+                if value[0]=="Portes":
+                    AllInfos["Portes"]=value[1]   
+                if value[0]=="Version pays":
+                    AllInfos["pays"]=value[1]
+
+            return AllInfos
         else:
             return False
         
@@ -374,6 +448,8 @@ def Color_Data_Finder(soup):
         titles = []
         values = []
         Infos_finales=[]
+        AllInfos={}
+        
 
           # Trouve toutes les dt dont la classe contient 'DataGrid_defaultDtStyle__soJ6R'
         for dt in Color_Data_container.find_all('dt', class_='DataGrid_defaultDtStyle__soJ6R'):
@@ -388,11 +464,15 @@ def Color_Data_Finder(soup):
 
         # Retourner les valeurs dans une liste adéquate
         for i in range(len(titles)):
-            Infos_finales.append([titles[i],values[i]])
+            Infos_finales.append([titles[i],values[i]])  
 
         
         if Infos_finales:
-            return Infos_finales
+            AllInfos["Infos_finales"]=Infos_finales
+            for value in Infos_finales:                
+                if value[0]=="Couleur extérieure":
+                    AllInfos["Couleur"]=value[1]
+            return AllInfos
         else:
             return False
 
