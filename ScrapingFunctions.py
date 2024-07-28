@@ -91,7 +91,7 @@ def price_finder(soup):
 
 
         def calculate_price(value):
-            converted_price = (int(((value / 10) * 655) / 1000)) * 1000
+            converted_price = (int((value * 655) / 1000)) * 1000
             end_price = converted_price
 
             if converted_price < 3000000:
@@ -193,10 +193,10 @@ def Infos_generales_Finder(soup):
             return False
     
     except ValueError as ve:
-        print(f"Erreur de valeur : {ve}")
+        print(f"Erreur de valeur Infos_generales_Finder: {ve}")
         return False
     except Exception as e:
-        print(f"Erreur inattendue : {e}")
+        print(f"Erreur inattendue Infos_generales_Finder: {e}")
         return False
 
 
@@ -251,10 +251,10 @@ def Basic_Data_Finder(soup):
         
     
     except ValueError as ve:
-        print(f"Erreur de valeur : {ve}")
+        print(f"Erreur de valeur Basic_Data_Finder: {ve}")
         return False
     except Exception as e:
-        print(f"Erreur inattendue : {e}")
+        print(f"Erreur inattendue Basic_Data_Finder: {e}")
         return False
 
 
@@ -295,10 +295,10 @@ def Historical_Data_Finder(soup):
             return False
 
     except ValueError as ve:
-        print(f"Erreur de valeur : {ve}")
+        print(f"Erreur de valeur Historical_Data_Finder: {ve}")
         return False
     except Exception as e:
-        print(f"Erreur inattendue : {e}")
+        print(f"Erreur inattendue Historical_Data_Finder: {e}")
         return False
 
 
@@ -339,10 +339,10 @@ def Technical_Data_Finder(soup):
             return False
 
     except ValueError as ve:
-        print(f"Erreur de valeur : {ve}")
+        print(f"Erreur de valeur Technical_Data_Finder: {ve}")
         return False
     except Exception as e:
-        print(f"Erreur inattendue : {e}")
+        print(f"Erreur inattendue Technical_Data_Finder : {e}")
         return False
     
 
@@ -382,10 +382,10 @@ def Energie_Data_Finder(soup):
             return False
 
     except ValueError as ve:
-        print(f"Erreur de valeur : {ve}")
+        print(f"Erreur de valeur Energie_Data_Finder : {ve}")
         return False
     except Exception as e:
-        print(f"Erreur inattendue : {e}")
+        print(f"Erreur inattendue Energie_Data_Finder : {e}")
         return False
 
 
@@ -429,10 +429,10 @@ def Equipment_Data_Finder(soup):
             return False
 
     except ValueError as ve:
-        print(f"Erreur de valeur : {ve}")
+        print(f"Erreur de valeur Equipment_Data_Finder: {ve}")
         return False
     except Exception as e:
-        print(f"Erreur inattendue : {e}")
+        print(f"Erreur inattendue Equipment_Data_Finder: {e}")
         return False
 
 
@@ -477,8 +477,8 @@ def Color_Data_Finder(soup):
             return False
 
     except ValueError as ve:
-        print(f"Erreur de valeur : {ve}")
+        print(f"Erreur de valeur Color_Data_Finder: {ve}")
         return False
     except Exception as e:
-        print(f"Erreur inattendue : {e}")
+        print(f"Erreur inattendue Color_Data_Finder: {e}")
         return False
