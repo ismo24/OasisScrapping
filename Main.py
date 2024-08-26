@@ -8,7 +8,8 @@ from ScrapingFunctions import ModelsInfosFinder,price_finder,Infos_generales_Fin
 # from DataBaseFunctions import getAllAutos,updateAllAutos
 from Authenticate import sign_up,login
 from Constants import AllModels
-from SqlFunctions import retrieve_to_add_autos,retrieve_to_delete_autos,insert_cars,delete_cars,create_table,delete_table
+from SqlFunctions import retrieve_to_add_autos,retrieve_to_delete_autos,insert_cars,delete_cars
+
 
 
 AllInfos={}
@@ -16,9 +17,8 @@ LastModel=[]
 lastModelIndex=0
 actualModelIndex=0
 
-# Create sql cars database
-delete_table("cars")  
-create_table()   
+
+  
 
 for marque in dict_Marques_Names.keys():
     marqueKey=f"{marque}"
@@ -73,13 +73,26 @@ for marque in dict_Marques_Names.keys():
                 auto_data = auto_response.text
                 # Parse le contenu HTML avec BeautifulSoup
                 auto_soup = BeautifulSoup(auto_data, 'html.parser')
+                
+
+                price = price_finder(auto_soup)
+                if not price:  # Si price_finder renvoie False ou None
+                    continue
+                else:
+                    ModelAllInfos[autoId]["price"]=price
 
                 GeneralValues=Infos_generales_Finder(auto_soup)
+                if not GeneralValues:  # Si price_finder renvoie False ou None
+                    continue
+                else:
+                    ModelAllInfos[autoId]["generalValues"] = GeneralValues["Infos_finales"] if GeneralValues and  "Infos_finales" in GeneralValues else None    
+
+                
                 BasicData=Basic_Data_Finder(auto_soup)
                 ColorData=Color_Data_Finder(auto_soup)
 
-                ModelAllInfos[autoId]["price"]=price_finder(auto_soup)
-                ModelAllInfos[autoId]["generalValues"] = GeneralValues["Infos_finales"] if GeneralValues and  "Infos_finales" in GeneralValues else None
+                
+                
                 ModelAllInfos[autoId]["kilometrage"] = GeneralValues["Kilométrage"] if GeneralValues and "Kilométrage" in GeneralValues else None
                 ModelAllInfos[autoId]["carburant"] = GeneralValues["Carburant"] if GeneralValues and "Carburant" in GeneralValues else None
                 ModelAllInfos[autoId]["annee"] = GeneralValues["Année"] if GeneralValues and "Année" in GeneralValues else None
@@ -105,19 +118,10 @@ for marque in dict_Marques_Names.keys():
                 ModelAllInfos[autoId]["model"]=realmodelName
                 
 
-            if len(ModelAllInfos)>2:
-                print(ModelAllInfos)
+            # if len(ModelAllInfos)>2:
+            #     print(ModelAllInfos)
                 
             
-                
-                
-            # OnlineAutos=getAllAutos()
-            # print("ancien nombre de voitures :",len(OnlineAutos))
-            # print(f"voitures à ajouter {marque} :",len(ModelAllInfos))
-            # New_dict={**OnlineAutos,**ModelAllInfos}
-            # OnlineAutos.update(ModelAllInfos)
-            # print('nouvelle longueur normalement :',len(OnlineAutos))
-            # updateAllAutos(ModelAllInfos,myToken,actualModelIndex)
 
             insert_cars(ModelAllInfos,actualModelIndex)
 

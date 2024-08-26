@@ -89,6 +89,10 @@ def price_finder(soup):
         # Enlever tous les caractères non numériques et convertir le tout en entier
         price = int(re.sub(r'\D', '', price_span.text))
 
+        # Retourrner false si la valeur du véhicule est inférieure à 1000 euros
+        if(price<1000):
+            return False
+
 
         def calculate_price(value):
             converted_price = (int((value * 655) / 1000)) * 1000

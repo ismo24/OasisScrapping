@@ -45,74 +45,6 @@ def fetch_query(connection, query):
         print(f"The error '{e}' occurred")
 
 
-# Writing a create_table_query
-def create_table():
-    try:
-        connection = create_connection()
-        cursor = connection.cursor()
-        create_table_query = """
-        CREATE TABLE IF NOT EXISTS cars (
-            id INT AUTO_INCREMENT PRIMARY KEY,
-            webid VARCHAR(50) UNIQUE,
-            mark VARCHAR(20),
-            model VARCHAR(20),
-            price INT,
-            annee DATE,
-            pays VARCHAR(30),
-            transmission VARCHAR(20),
-            kilometrage INT,
-            carburant VARCHAR(20),
-            carosserie VARCHAR(20),
-            moteur VARCHAR(20),
-            portes INT,
-            sieges INT,
-            color VARCHAR(20),
-            generalValues TEXT,
-            basicData TEXT,
-            historicalData TEXT,
-            technicaData TEXT,
-            energieData TEXT,
-            equipement TEXT,
-            colorData TEXT,
-            image_urls TEXT,
-            clics INT,
-            clicsDates TEXT,
-            messages INT,
-            messagesDates TEXT,
-            calls INT,
-            callsDates TEXT
-        );
-        """
-        cursor.execute(create_table_query)
-        connection.commit()
-        print("cars table created successfully")
-
-        if connection.is_connected():
-            connection.close()
-        print("Connection to MySQL DB closed")
-
-    except Error as e:
-        print(f"The error '{e}' occurred")
-
-
-def delete_table(table_name):
-    try:
-        connection = create_connection()
-        cursor = connection.cursor()
-        # Prepare the SQL query to drop the table
-        query = f"DROP TABLE IF EXISTS {table_name};"
-        
-        cursor.execute(query)
-        connection.commit()
-        print(f"Table `{table_name}` deleted successfully")
-    except Error as e:
-        print(f"The error '{e}' occurred")
-
-    finally:
-        if connection and connection.is_connected():
-            connection.close()
-            print("Connection to MySQL DB closed")
-
 
 
 
@@ -121,8 +53,8 @@ def insert_cars(all_infos, actualModelIndex):
         connection = create_connection()
         cursor = connection.cursor()
         car_query = """                                                                             
-        INSERT INTO cars (webid, mark, model, price, annee, pays, transmission, kilometrage, carburant, carosserie, moteur, portes, sieges, color, generalValues, basicData, historicalData, technicaData, energieData, equipement, colorData, image_urls, clics, clicsDates, messages, messagesDates, calls, callsDates) 
-        VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s);
+        INSERT INTO SCRAPING_CARS (webid, mark, model, price, annee, pays, transmission, kilometrage, carburant, carosserie, moteur, portes, sieges, color, generalValues, basicData, historicalData, technicaData, energieData, equipement, colorData, image_urls) 
+        VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s);
         """
         InsertionsLength = len(all_infos)
         
@@ -189,7 +121,7 @@ def delete_cars(car_ids):
         cursor = connection.cursor()
         # Construct the SQL query
         format_strings = ','.join(['%s'] * len(car_ids))
-        query = f"DELETE FROM cars WHERE webid IN ({format_strings})"
+        query = f"DELETE FROM SCRAPING_CARS WHERE webid IN ({format_strings})"
         
         # Execute the query
         cursor.execute(query, tuple(car_ids))
@@ -216,7 +148,7 @@ def retrieve_to_add_autos(ids):
         cursor = connection.cursor()
         # Prepare the SQL query to check for existing IDs
         format_strings = ','.join(['%s'] * len(ids))
-        query = f"SELECT webid FROM cars WHERE webid IN ({format_strings})"
+        query = f"SELECT webid FROM SCRAPING_CARS WHERE webid IN ({format_strings})"
         cursor.execute(query, tuple(ids))
         
         # Fetch all results
@@ -250,7 +182,7 @@ def retrieve_to_delete_autos(ids,searchValues):
         cursor = connection.cursor()
         # Prepare the SQL query search for corresponding autos
         
-        query = f"SELECT webid FROM cars WHERE mark = %s AND model = %s;"
+        query = f"SELECT webid FROM SCRAPING_CARS WHERE mark = %s AND model = %s;"
 
         cursor.execute(query,(searchValues[0], searchValues[1]))
         
