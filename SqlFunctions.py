@@ -82,12 +82,6 @@ def insert_cars(all_infos, actualModelIndex):
                 json.dumps(car_info.get("equipement", [])),
                 json.dumps(car_info.get("colorData", [])),
                 json.dumps(car_info.get("image_urls", [])),
-                0,
-                "[]",
-                0,
-                "[]", 
-                0,
-                "[]"
             )
             cursor.execute(car_query, values)
             connection.commit()
