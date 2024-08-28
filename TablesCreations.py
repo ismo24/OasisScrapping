@@ -220,6 +220,8 @@ def create_cars_stats_table():
         image_urls TEXT,
         clics INT,
         clicsDates DATE,
+        favorites INT,
+        favoritesDates DATE,
         messages INT,
         messagesDates DATE,
         calls INT,
