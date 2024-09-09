@@ -86,8 +86,22 @@ def price_finder(soup):
         if not price_span:
             raise ValueError("Balise de prix non trouvée dans le conteneur")
 
+        
         # Enlever tous les caractères non numériques et convertir le tout en entier
-        price = int(re.sub(r'\D', '', price_span.text))
+        value=price_span.text
+        # Print the original value
+        print("value:", value)
+
+        # Extract the value between "€" and the comma
+        value = value.split('€')[1].split(',')[0].strip()
+
+        # Remove all whitespace characters, including non-breaking spaces
+        value = re.sub(r'\s+', '', value)
+
+        # Convert to integer
+        price = int(value)
+
+        
 
         # Retourrner false si la valeur du véhicule est inférieure à 1000 euros
         if(price<1000):
@@ -100,7 +114,7 @@ def price_finder(soup):
 
             if converted_price < 3000000:
                 end_price += 1200000
-            elif converted_price < 8000_000:
+            elif converted_price < 8000000:
                 end_price += 1500000
             elif converted_price < 12000000:
                 end_price += 2000000
@@ -486,3 +500,13 @@ def Color_Data_Finder(soup):
     except Exception as e:
         print(f"Erreur inattendue Color_Data_Finder: {e}")
         return False
+
+
+
+auto_url = f"https://www.autoscout24.fr/offres/dedd8d8d-f847-45f9-9970-175af69d7204"
+auto_response = requests.get(auto_url)
+auto_data = auto_response.text
+auto_soup = BeautifulSoup(auto_data, 'html.parser')
+                
+price = price_finder(auto_soup)
+print(price)
