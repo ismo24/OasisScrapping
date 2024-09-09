@@ -113,7 +113,7 @@ def price_finder(soup):
             end_price = converted_price
 
             if converted_price < 3000000:
-                end_price += 1200000
+                end_price += 1400000
             elif converted_price < 8000000:
                 end_price += 1500000
             elif converted_price < 12000000:
