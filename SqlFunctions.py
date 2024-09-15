@@ -9,7 +9,7 @@ def create_connection():
         connection = mysql.connector.connect(
             host='localhost',
             user='ismo',  # Replace with your MySQL username
-            password='2359Koura@ismael',  # Replace with your MySQL password
+            password='2359Koura@ismael',  # Replace with your MySQL password '2359@Koura','2359Koura@ismael'
             database='cars_store'  # Replace with your database name
         )
         if connection.is_connected():
@@ -102,7 +102,79 @@ def insert_cars(all_infos, actualModelIndex):
 # Example usage
 # insert_cars(ModelAllInfos, actualModelIndex)
 
-    
+
+import sqlite3
+
+def get_carsis_cars_webids():
+    try:
+        # Connexion à la base de données SQLite
+        connection = create_connection()
+        cursor = connection.cursor()
+
+        # Requête SQL pour récupérer les webids contenant 'Carsis_cars'
+        query = "SELECT webid FROM cars WHERE webid LIKE '%Carsis_cars%'"
+
+        # Exécution de la requête et récupération des résultats
+        cursor.execute(query)
+        results = cursor.fetchall()
+        
+        # Fermer la connexion à la base de données
+        
+        if connection.is_connected():
+            connection.close()
+            print("Connection to MySQL DB closed")
+
+        # Retourner les webids sous forme de liste
+        return [row[0] for row in results]
+    except Error as e:
+        print(f"The error '{e}' occurred")
+
+
+
+
+def insert_carsis_sellers_car(auto_webid,car_info):
+    try:
+        connection = create_connection()
+        cursor = connection.cursor()
+        car_query = """                                                                             
+        INSERT INTO cars (webid, mark, model, price, annee, pays, transmission, kilometrage, carburant, carosserie, moteur, portes, sieges, color, generalValues, basicData, historicalData, technicaData, energieData, equipement, colorData, image_urls) 
+        VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s);
+        """
+        
+        values = (
+                auto_webid,
+                car_info.get("mark", None),
+                car_info.get("model", None),
+                car_info.get("price", None),
+                car_info.get("annee", None),
+                car_info.get("pays", None),
+                car_info.get("transmission", None),
+                car_info.get("kilometrage", None),
+                car_info.get("carburant", None),
+                car_info.get("carosserie", None),
+                car_info.get("moteur", None),
+                car_info.get("portes", None),
+                car_info.get("sieges", None),
+                car_info.get("color", None),
+                json.dumps(car_info.get("generalValues", [])),
+                json.dumps(car_info.get("basicData", [])),
+                json.dumps(car_info.get("historicalData", [])),
+                json.dumps(car_info.get("technicaData", [])),
+                json.dumps(car_info.get("energieData", [])),
+                json.dumps(car_info.get("equipement", [])),
+                json.dumps(car_info.get("colorData", [])),
+                json.dumps(car_info.get("image_urls", [])),
+            )
+        cursor.execute(car_query, values)
+        connection.commit()
+        print(f"car {auto_webid}  inserted successfully")
+        if connection.is_connected():
+            connection.close()
+            print("Connection to MySQL DB closed")
+
+    except Error as e:
+        print(f"The error '{e}' occurred")
+
 
 
 # function to delete a list of cars
