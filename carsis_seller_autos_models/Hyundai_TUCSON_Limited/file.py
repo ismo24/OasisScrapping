@@ -30,8 +30,10 @@ Hyundai_TUCSON_Limited_2011 = {
     ["Carnet d'entretien", "Oui"],
   ],
   
-  "image_urls": ["https://prod.pictures.autoscout24.net/listing-images/27ac7180-3a20-461e-97bc-d0fc3e04610a_fd545612-6c3a-43d2-864d-36c3cba68f53.jpg",
-    "https://prod.pictures.autoscout24.net/listing-images/27ac7180-3a20-461e-97bc-d0fc3e04610a_d94fce1c-be90-4d20-b452-5a4734ecbc00.jpg"],
+  "image_urls": ["https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_01.jpg",
+"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_02.jpg",
+"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_03.jpg",
+"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_04.jpg"],
    
   "mark": "Hyundai",
   "model": "TUCSON Limited",
@@ -54,7 +56,7 @@ Hyundai_TUCSON_Limited_2011 = {
     ["Cylindres", "4"],
     ["Poids à vide", "1 850 kg"],
   ],
-  "webid": "Carsis_seller"
+  
 }
 
 
@@ -87,8 +89,10 @@ Hyundai_TUCSON_Limited_2012 = {
     ["Carnet d'entretien", "Oui"],
   ],
   
-  "image_urls": ["https://prod.pictures.autoscout24.net/listing-images/27ac7180-3a20-461e-97bc-d0fc3e04610a_fd545612-6c3a-43d2-864d-36c3cba68f53.jpg",
-    "https://prod.pictures.autoscout24.net/listing-images/27ac7180-3a20-461e-97bc-d0fc3e04610a_d94fce1c-be90-4d20-b452-5a4734ecbc00.jpg"],
+  "image_urls": ["https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_01.jpg",
+"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_02.jpg",
+"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_03.jpg",
+"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_04.jpg"],
    
   "mark": "Hyundai",
   "model": "TUCSON Limited",
@@ -144,8 +148,10 @@ Hyundai_TUCSON_Limited_2013 = {
     ["Carnet d'entretien", "Oui"],
   ],
   
-  "image_urls": ["https://prod.pictures.autoscout24.net/listing-images/27ac7180-3a20-461e-97bc-d0fc3e04610a_fd545612-6c3a-43d2-864d-36c3cba68f53.jpg",
-    "https://prod.pictures.autoscout24.net/listing-images/27ac7180-3a20-461e-97bc-d0fc3e04610a_d94fce1c-be90-4d20-b452-5a4734ecbc00.jpg"],
+  "image_urls": ["https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_01.jpg",
+"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_02.jpg",
+"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_03.jpg",
+"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_04.jpg"],
    
   "mark": "Hyundai",
   "model": "TUCSON Limited",
@@ -201,8 +207,10 @@ Hyundai_TUCSON_Limited_2014 = {
     ["Carnet d'entretien", "Oui"],
   ],
   
-  "image_urls": ["https://prod.pictures.autoscout24.net/listing-images/27ac7180-3a20-461e-97bc-d0fc3e04610a_fd545612-6c3a-43d2-864d-36c3cba68f53.jpg",
-    "https://prod.pictures.autoscout24.net/listing-images/27ac7180-3a20-461e-97bc-d0fc3e04610a_d94fce1c-be90-4d20-b452-5a4734ecbc00.jpg"],
+  "image_urls": ["https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_01.jpg",
+"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_02.jpg",
+"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_03.jpg",
+"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_04.jpg"],
    
   "mark": "Hyundai",
   "model": "TUCSON Limited",
@@ -257,8 +265,10 @@ Hyundai_TUCSON_Limited_2015 = {
     ["Carnet d'entretien", "Oui"],
   ],
   
-  "image_urls": ["https://prod.pictures.autoscout24.net/listing-images/27ac7180-3a20-461e-97bc-d0fc3e04610a_fd545612-6c3a-43d2-864d-36c3cba68f53.jpg",
-    "https://prod.pictures.autoscout24.net/listing-images/27ac7180-3a20-461e-97bc-d0fc3e04610a_d94fce1c-be90-4d20-b452-5a4734ecbc00.jpg"],
+  "image_urls": ["https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_01.jpg",
+"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_02.jpg",
+"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_03.jpg",
+"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_04.jpg"],
    
   "mark": "Hyundai",
   "model": "TUCSON Limited",
@@ -314,8 +324,10 @@ Hyundai_TUCSON_Limited_2016 = {
     ["Carnet d'entretien", "Oui"],
   ],
   
-  "image_urls": ["https://prod.pictures.autoscout24.net/listing-images/27ac7180-3a20-461e-97bc-d0fc3e04610a_fd545612-6c3a-43d2-864d-36c3cba68f53.jpg",
-    "https://prod.pictures.autoscout24.net/listing-images/27ac7180-3a20-461e-97bc-d0fc3e04610a_d94fce1c-be90-4d20-b452-5a4734ecbc00.jpg"],
+  "image_urls": ["https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_01.jpg",
+"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_02.jpg",
+"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_03.jpg",
+"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_04.jpg"],
    
   "mark": "Hyundai",
   "model": "TUCSON Limited",
@@ -371,8 +383,10 @@ Hyundai_TUCSON_Limited_2017 = {
     ["Carnet d'entretien", "Oui"],
   ],
   
-  "image_urls": ["https://prod.pictures.autoscout24.net/listing-images/27ac7180-3a20-461e-97bc-d0fc3e04610a_fd545612-6c3a-43d2-864d-36c3cba68f53.jpg",
-    "https://prod.pictures.autoscout24.net/listing-images/27ac7180-3a20-461e-97bc-d0fc3e04610a_d94fce1c-be90-4d20-b452-5a4734ecbc00.jpg"],
+  "image_urls": ["https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_01.jpg",
+"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_02.jpg",
+"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_03.jpg",
+"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_04.jpg"],
    
   "mark": "Hyundai",
   "model": "TUCSON Limited",
@@ -428,8 +442,10 @@ Hyundai_TUCSON_Limited_2018 = {
     ["Carnet d'entretien", "Oui"],
   ],
   
-  "image_urls": ["https://prod.pictures.autoscout24.net/listing-images/27ac7180-3a20-461e-97bc-d0fc3e04610a_fd545612-6c3a-43d2-864d-36c3cba68f53.jpg",
-    "https://prod.pictures.autoscout24.net/listing-images/27ac7180-3a20-461e-97bc-d0fc3e04610a_d94fce1c-be90-4d20-b452-5a4734ecbc00.jpg"],
+  "image_urls": ["https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_01.jpg",
+"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_02.jpg",
+"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_03.jpg",
+"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_04.jpg"],
    
   "mark": "Hyundai",
   "model": "TUCSON Limited",
@@ -485,8 +501,10 @@ Hyundai_TUCSON_Limited_2019 = {
     ["Carnet d'entretien", "Oui"],
   ],
   
-  "image_urls": ["https://prod.pictures.autoscout24.net/listing-images/27ac7180-3a20-461e-97bc-d0fc3e04610a_fd545612-6c3a-43d2-864d-36c3cba68f53.jpg",
-    "https://prod.pictures.autoscout24.net/listing-images/27ac7180-3a20-461e-97bc-d0fc3e04610a_d94fce1c-be90-4d20-b452-5a4734ecbc00.jpg"],
+  "image_urls": ["https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_01.jpg",
+"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_02.jpg",
+"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_03.jpg",
+"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_04.jpg"],
    
   "mark": "Hyundai",
   "model": "TUCSON Limited",
@@ -542,8 +560,10 @@ Hyundai_TUCSON_Limited_2020 = {
     ["Carnet d'entretien", "Oui"],
   ],
   
-  "image_urls": ["https://prod.pictures.autoscout24.net/listing-images/27ac7180-3a20-461e-97bc-d0fc3e04610a_fd545612-6c3a-43d2-864d-36c3cba68f53.jpg",
-    "https://prod.pictures.autoscout24.net/listing-images/27ac7180-3a20-461e-97bc-d0fc3e04610a_d94fce1c-be90-4d20-b452-5a4734ecbc00.jpg"],
+  "image_urls": ["https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_01.jpg",
+"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_02.jpg",
+"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_03.jpg",
+"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_04.jpg"],
    
   "mark": "Hyundai",
   "model": "TUCSON Limited",

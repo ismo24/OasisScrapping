@@ -175,6 +175,27 @@ def insert_carsis_sellers_car(auto_webid,car_info):
     except Error as e:
         print(f"The error '{e}' occurred")
 
+def delete_carsis_seller_records():
+    try:
+        # Connexion à la base de données SQLite
+        connection = create_connection()
+        cursor = connection.cursor()
+
+        # Requête SQL pour supprimer les enregistrements dont le webid contient 'Carsis_Seller'
+        delete_query = "DELETE FROM cars WHERE webid LIKE '%Carsis_cars%'"
+
+        # Exécution de la requête de suppression
+        cursor.execute(delete_query)
+        connection.commit()  # Confirmer la suppression des enregistrements
+        
+        print(f"{cursor.rowcount} records deleted successfully.")
+
+        # Fermer la connexion à la base de données
+        if connection:
+            connection.close()
+            print("Connection to MySQL DB closed")
+    except Error as e:
+        print(f"The error '{e}' occurred")
 
 
 # function to delete a list of cars

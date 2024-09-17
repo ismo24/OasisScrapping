@@ -53,7 +53,7 @@ Hyundai_TUCSON_2009 = {
     ["Cylindres", "4"],
     ["Poids à vide", "1 600 kg"],
   ],
-  "webid": "Carsis_seller"
+  
 }
 
 Hyundai_TUCSON_2010 = {

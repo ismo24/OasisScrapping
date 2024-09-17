@@ -1,12 +1,12 @@
 
-from SqlFunctions import insert_carsis_sellers_car,get_carsis_cars_webids
+from SqlFunctions import insert_carsis_sellers_car,get_carsis_cars_webids,delete_carsis_seller_records
 from carsis_seller_autos_models.Lexus_RX_350.file import Lexus_RX_350
 from carsis_seller_autos_models.Lexus_NX_200t.file import Lexus_NX_200t
 from carsis_seller_autos_models.Hyundai_TUCSON.file import Hyundai_TUCSON
 from carsis_seller_autos_models.Hyundai_TUCSON_Limited.file import Hyundai_TUCSON_Limited
+from carsis_seller_autos_models.Hyundai_ELANTRA.file import Hyundai_ELANTRA
 
-
-
+Hyundai_ELANTRA
 
 all_autos=[*Lexus_RX_350,*Lexus_NX_200t,*Hyundai_TUCSON,*Hyundai_TUCSON_Limited]
 
@@ -33,13 +33,23 @@ def generate_unique_string(existing_strings):
 # Exemple d'utilisation
 
 
-for auto in all_autos:
-    existing_strings = get_carsis_cars_webids()
-    unique_string = generate_unique_string(existing_strings)
-    if(unique_string):
-        print(unique_string)
-        insert_carsis_sellers_car(unique_string,auto)
+# for auto in all_autos:
+#     existing_strings = get_carsis_cars_webids()
+#     unique_string = generate_unique_string(existing_strings)
+#     if(unique_string):
+#         print(unique_string)
+#         insert_carsis_sellers_car(unique_string,auto)
 
 
-# existing_strings = get_carsis_cars_webids()
-# print(existing_strings)
+#for testing each automels
+
+# for auto in Hyundai_ELANTRA:
+#     existing_strings = get_carsis_cars_webids()
+#     unique_string = generate_unique_string(existing_strings)
+#     if(unique_string):
+#         print(unique_string)
+#         insert_carsis_sellers_car(unique_string,auto) 
+
+
+#function to delete Carsis records
+delete_carsis_seller_records()
