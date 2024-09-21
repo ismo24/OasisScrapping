@@ -269,7 +269,7 @@ def truncate_tables():
         cursor.execute(truncate_table_query)
         connection.commit()
         print("SCRAPING_CARS table truncated successfully")
-         truncate_table_query = "TRUNCATE TABLE cars;"
+        truncate_table_query = "TRUNCATE TABLE cars;"
         cursor.execute(truncate_table_query)
         connection.commit()
         print("cars table truncated successfully")
@@ -315,4 +315,4 @@ def truncate_tables():
 
 
 #truncate tables
-# truncate_tables()
+truncate_tables()
