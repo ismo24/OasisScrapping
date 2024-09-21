@@ -408,7 +408,7 @@ Auto_models={
 AllModels = [[i, j] for i in Auto_models.keys() for j in Auto_models[i].keys()]
 
 # print(AllModels.index(['volkswagen','Grand California']))
-print(len(AllModels))
+# print(len(AllModels))
 
 # 0 * * * * /root/ScrappingApp/OasisScrapping/watchdog.sh
 

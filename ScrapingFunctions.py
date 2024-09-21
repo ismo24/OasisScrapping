@@ -100,6 +100,8 @@ def price_finder(soup):
 
         # Convert to integer
         price = int(value)
+        if(price>100000):
+            price=price/10
 
         
 

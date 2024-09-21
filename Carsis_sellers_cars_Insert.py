@@ -33,12 +33,12 @@ def generate_unique_string(existing_strings):
 # Exemple d'utilisation
 
 
-# for auto in all_autos:
-#     existing_strings = get_carsis_cars_webids()
-#     unique_string = generate_unique_string(existing_strings)
-#     if(unique_string):
-#         print(unique_string)
-#         insert_carsis_sellers_car(unique_string,auto)
+for auto in all_autos:
+    existing_strings = get_carsis_cars_webids()
+    unique_string = generate_unique_string(existing_strings)
+    if(unique_string):
+        print(unique_string)
+        insert_carsis_sellers_car(unique_string,auto)
 
 
 #for testing each automels
@@ -52,4 +52,4 @@ def generate_unique_string(existing_strings):
 
 
 #function to delete Carsis records
-delete_carsis_seller_records()
+# delete_carsis_seller_records()
