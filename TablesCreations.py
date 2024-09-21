@@ -258,7 +258,7 @@ def create_all_tables():
     create_popular_cars_table()
 
 
-def truncate_table_scraping_cars():
+def truncate_tables():
     try:
         # Establish connection to the database
         connection = create_connection()
@@ -269,47 +269,33 @@ def truncate_table_scraping_cars():
         cursor.execute(truncate_table_query)
         connection.commit()
         print("SCRAPING_CARS table truncated successfully")
-
-        # Close the connection if it's open
-        if connection.is_connected():
-            connection.close()
-        print("Connection to MySQL DB closed")
-
-    except Error as e:
-        print(f"The error '{e}' occurred")
-
-
-def truncate_table_cars():
-    try:
-        # Establish connection to the database
-        connection = create_connection()
-        cursor = connection.cursor()
-
-        # Truncate the table
-        truncate_table_query = "TRUNCATE TABLE cars;"
+         truncate_table_query = "TRUNCATE TABLE cars;"
         cursor.execute(truncate_table_query)
         connection.commit()
-        print("SCRAPING_CARS table truncated successfully")
-
-        # Close the connection if it's open
-        if connection.is_connected():
-            connection.close()
-        print("Connection to MySQL DB closed")
-
-    except Error as e:
-        print(f"The error '{e}' occurred")
-
-def truncate_table_CLIENTS_DATA():
-    try:
-        # Establish connection to the database
-        connection = create_connection()
-        cursor = connection.cursor()
-
-        # Truncate the table
-        truncate_table_query = "TRUNCATE TABLE CLIENTS_DATA;"
+        print("cars table truncated successfully")
+        truncate_table_query = "TRUNCATE TABLE CLIENTS_DATA;"  
         cursor.execute(truncate_table_query)
         connection.commit()
-        print("SCRAPING_CARS table truncated successfully")
+        print("CLIENTS_DATA table truncated successfully")
+        truncate_table_query = "TRUNCATE TABLE GLOBAL_STATS;"
+        cursor.execute(truncate_table_query)
+        connection.commit()  
+        print("GLOBAL_STATS table truncated successfully")
+        truncate_table_query = "TRUNCATE TABLE CarsStats;"
+        cursor.execute(truncate_table_query)
+        connection.commit()
+        print("CarsStats table truncated successfully")
+        truncate_table_query = "TRUNCATE TABLE PopularCars;"
+        cursor.execute(truncate_table_query)
+        connection.commit()
+        print("PopularCars table truncated successfully")
+        truncate_table_query = "TRUNCATE TABLE BEST_DEAL_CARS;"
+        cursor.execute(truncate_table_query)
+        connection.commit()
+        print("BEST_DEAL_CARS table truncated successfully")
+
+
+
 
         # Close the connection if it's open
         if connection.is_connected():
@@ -318,6 +304,8 @@ def truncate_table_CLIENTS_DATA():
 
     except Error as e:
         print(f"The error '{e}' occurred")
+
+
 
 #Tables à créer 
 #'CLIENTS_DATA', GLOBAL_STATS,CARS_STATS,cars,STATIC_DATA,POPULAR_CARS,BEST_DEAL_CARS,
@@ -327,6 +315,4 @@ def truncate_table_CLIENTS_DATA():
 
 
 #truncate tables
-# truncate_table_cars()
-# truncate_table_scraping_cars()
-# truncate_table_CLIENTS_DATA()
+# truncate_tables()
