@@ -281,10 +281,10 @@ def truncate_tables():
         cursor.execute(truncate_table_query)
         connection.commit()  
         print("GLOBAL_STATS table truncated successfully")
-        truncate_table_query = "TRUNCATE TABLE CarsStats;"
+        truncate_table_query = "TRUNCATE TABLE CARS_STATS;"
         cursor.execute(truncate_table_query)
         connection.commit()
-        print("CarsStats table truncated successfully")
+        print("CARS_STATS table truncated successfully")
         truncate_table_query = "TRUNCATE TABLE PopularCars;"
         cursor.execute(truncate_table_query)
         connection.commit()
