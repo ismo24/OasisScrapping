@@ -40,7 +40,7 @@ for auto in all_autos:
         print(unique_string)
         insert_carsis_sellers_car(unique_string,auto)
 
-
+print("carsis_sellers_length :",len(auto))
 #for testing each automels
 
 # for auto in Hyundai_ELANTRA:
