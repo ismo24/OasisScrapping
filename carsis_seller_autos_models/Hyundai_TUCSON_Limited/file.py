@@ -1,6 +1,64 @@
 from datetime import date
 
 
+Hyundai_TUCSON_Limited_2010 = {
+  "basicData": [
+    ["Carrosserie", "SUV/4x4/Pick-Up"],
+    ["État", "Occasion"],
+    ["Sièges", "5"],
+    ["Portes", "5"],
+    ["Numéro de la touche", "5013/AKG"],
+  ],
+  "energieData": [
+    ["Classe d'émission", "Euro 5"],
+    ["Carburant", "Essence"],
+    ["Consommation de carburant", "9,8l/100 km (mixte)"],
+    ["Émissions de CO2", "230 g/km (mixte)"],
+  ],
+  "equipement": [],
+  "generalValues": [
+    ["Kilométrage", "120 000 km"],
+    ["Transmission", "Boîte automatique"],
+    ["Année", "02/2011"],
+    ["Carburant", "Essence"],
+    ["Puissance kW (CH)", "130 kW (177 CH)"],
+  ],
+  "historicalData": [
+    ["Kilométrage", "160 000 km"],
+    ["Année", "02/2011"],
+    ["Propriétaires préc.", "2"],
+    ["Carnet d'entretien", "Oui"],
+  ],
+  
+  "image_urls": ["https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2010_Gris_01.jpg",
+"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2010_Gris_02.jpg",
+"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2010_Gris_03.jpg",
+"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2010_Gris_04.jpg"],
+   
+  "mark": "Hyundai",
+  "model": "TUCSON Limited",
+  "price": 6200000,
+  "kilometrage": 120000,
+  "carburant": "Essence",
+  "annee": date(2010, 2,1),
+  "carosserie": "SUV/4x4/Pick-Up",
+  "sieges": "5",
+  "portes": "5",
+  "pays": "Canada",
+  "moteur": None,
+  "transmission": "Boîte automatique",
+  "color": None,
+  "colorData": None,
+  "technicaData": [
+    ["Puissance kW (CH)", "130 kW (177 CH)"],
+    ["Transmission", "Boîte automatique"],
+    ["Cylindrée", "2 400 cm³"],
+    ["Cylindres", "4"],
+    ["Poids à vide", "1 850 kg"],
+  ],
+  
+}
+
 Hyundai_TUCSON_Limited_2011 = {
   "basicData": [
     ["Carrosserie", "SUV/4x4/Pick-Up"],
@@ -30,14 +88,14 @@ Hyundai_TUCSON_Limited_2011 = {
     ["Carnet d'entretien", "Oui"],
   ],
   
-  "image_urls": ["https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_01.jpg",
-"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_02.jpg",
-"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_03.jpg",
-"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_04.jpg"],
+  "image_urls": ["https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2011_Gris_01.jpg",
+"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2011_Gris_02.jpg",
+"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2011_Gris_03.jpg",
+"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2011_Gris_04.jpg"],
    
   "mark": "Hyundai",
   "model": "TUCSON Limited",
-  "price": 10500000,
+  "price": 6200000,
   "kilometrage": 160000,
   "carburant": "Essence",
   "annee": date(2011, 2,1),
@@ -89,14 +147,13 @@ Hyundai_TUCSON_Limited_2012 = {
     ["Carnet d'entretien", "Oui"],
   ],
   
-  "image_urls": ["https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_01.jpg",
-"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_02.jpg",
-"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_03.jpg",
-"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_04.jpg"],
+  "image_urls": ["https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2012_Bleu_01.jpg",
+"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2012_Bleu_02.jpg",
+"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2012_Bleu_03.jpg"],
    
   "mark": "Hyundai",
   "model": "TUCSON Limited",
-  "price": 11000000,
+  "price": 6300000,
   "kilometrage": 165000,
   "carburant": "Essence",
   "annee": date(2012, 2,1),
@@ -119,63 +176,63 @@ Hyundai_TUCSON_Limited_2012 = {
 }
 
 
-Hyundai_TUCSON_Limited_2013 = {
-  "basicData": [
-    ["Carrosserie", "SUV/4x4/Pick-Up"],
-    ["État", "Occasion"],
-    ["Sièges", "5"],
-    ["Portes", "5"],
-    ["Numéro de la touche", "5013/AKJ"],
-  ],
-  "energieData": [
-    ["Classe d'émission", "Euro 5"],
-    ["Carburant", "Essence"],
-    ["Consommation de carburant", "9,3l/100 km (mixte)"],
-    ["Émissions de CO2", "215 g/km (mixte)"],
-  ],
-  "equipement": [],
-  "generalValues": [
-    ["Kilométrage", "170 000 km"],
-    ["Transmission", "Boîte automatique"],
-    ["Année", "02/2013"],
-    ["Carburant", "Essence"],
-    ["Puissance kW (CH)", "130 kW (177 CH)"],
-  ],
-  "historicalData": [
-    ["Kilométrage", "170 000 km"],
-    ["Année", "02/2013"],
-    ["Propriétaires préc.", "2"],
-    ["Carnet d'entretien", "Oui"],
-  ],
+# Hyundai_TUCSON_Limited_2013 = {
+#   "basicData": [
+#     ["Carrosserie", "SUV/4x4/Pick-Up"],
+#     ["État", "Occasion"],
+#     ["Sièges", "5"],
+#     ["Portes", "5"],
+#     ["Numéro de la touche", "5013/AKJ"],
+#   ],
+#   "energieData": [
+#     ["Classe d'émission", "Euro 5"],
+#     ["Carburant", "Essence"],
+#     ["Consommation de carburant", "9,3l/100 km (mixte)"],
+#     ["Émissions de CO2", "215 g/km (mixte)"],
+#   ],
+#   "equipement": [],
+#   "generalValues": [
+#     ["Kilométrage", "170 000 km"],
+#     ["Transmission", "Boîte automatique"],
+#     ["Année", "02/2013"],
+#     ["Carburant", "Essence"],
+#     ["Puissance kW (CH)", "130 kW (177 CH)"],
+#   ],
+#   "historicalData": [
+#     ["Kilométrage", "170 000 km"],
+#     ["Année", "02/2013"],
+#     ["Propriétaires préc.", "2"],
+#     ["Carnet d'entretien", "Oui"],
+#   ],
   
-  "image_urls": ["https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_01.jpg",
-"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_02.jpg",
-"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_03.jpg",
-"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_04.jpg"],
+#   "image_urls": ["https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_01.jpg",
+# "https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_02.jpg",
+# "https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_03.jpg",
+# "https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_04.jpg"],
    
-  "mark": "Hyundai",
-  "model": "TUCSON Limited",
-  "price": 11500000,
-  "kilometrage": 170000,
-  "carburant": "Essence",
-  "annee": date(2013, 2,1),
-  "carosserie": "SUV/4x4/Pick-Up",
-  "sieges": "5",
-  "portes": "5",
-  "pays": "Canada",
-  "moteur": None,
-  "transmission": "Boîte automatique",
-  "color": None,
-  "colorData": None,
-  "technicaData": [
-    ["Puissance kW (CH)", "130 kW (177 CH)"],
-    ["Transmission", "Boîte automatique"],
-    ["Cylindrée", "2 400 cm³"],
-    ["Cylindres", "4"],
-    ["Poids à vide", "1 900 kg"],
-  ],
-  "webid": "Carsis_seller"
-}
+#   "mark": "Hyundai",
+#   "model": "TUCSON Limited",
+#   "price": 11500000,
+#   "kilometrage": 170000,
+#   "carburant": "Essence",
+#   "annee": date(2013, 2,1),
+#   "carosserie": "SUV/4x4/Pick-Up",
+#   "sieges": "5",
+#   "portes": "5",
+#   "pays": "Canada",
+#   "moteur": None,
+#   "transmission": "Boîte automatique",
+#   "color": None,
+#   "colorData": None,
+#   "technicaData": [
+#     ["Puissance kW (CH)", "130 kW (177 CH)"],
+#     ["Transmission", "Boîte automatique"],
+#     ["Cylindrée", "2 400 cm³"],
+#     ["Cylindres", "4"],
+#     ["Poids à vide", "1 900 kg"],
+#   ],
+#   "webid": "Carsis_seller"
+# }
 
 
 Hyundai_TUCSON_Limited_2014 = {
@@ -214,7 +271,7 @@ Hyundai_TUCSON_Limited_2014 = {
    
   "mark": "Hyundai",
   "model": "TUCSON Limited",
-  "price": 12000000,
+  "price": 6800000,
   "kilometrage": 175000,
   "carburant": "Essence",
   "annee": date(2014, 2,1),
@@ -272,7 +329,7 @@ Hyundai_TUCSON_Limited_2015 = {
    
   "mark": "Hyundai",
   "model": "TUCSON Limited",
-  "price": 12500000,
+  "price": 6800000,
   "kilometrage": 180000,
   "carburant": "Essence",
   "annee": date(2015, 2,1),
@@ -324,14 +381,14 @@ Hyundai_TUCSON_Limited_2016 = {
     ["Carnet d'entretien", "Oui"],
   ],
   
-  "image_urls": ["https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_01.jpg",
-"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_02.jpg",
-"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_03.jpg",
-"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_04.jpg"],
+  "image_urls": ["https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2016_Bleu_01.jpg",
+"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2016_Bleu_02.jpg",
+"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2016_Bleu_03.jpg",
+"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2016_Bleu_04.jpg"],
    
   "mark": "Hyundai",
   "model": "TUCSON Limited",
-  "price": 13000000,
+  "price": 9000000,
   "kilometrage": 145000,
   "carburant": "Essence",
   "annee": date(2016, 2,1),
@@ -383,14 +440,13 @@ Hyundai_TUCSON_Limited_2017 = {
     ["Carnet d'entretien", "Oui"],
   ],
   
-  "image_urls": ["https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_01.jpg",
-"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_02.jpg",
-"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_03.jpg",
-"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_04.jpg"],
+  "image_urls": ["https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2017_Rouge_01.jpg",
+"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2017_Rouge_02.jpg",
+"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2017_Rouge_03.jpg"],
    
   "mark": "Hyundai",
   "model": "TUCSON Limited",
-  "price": 13500000,
+  "price": 9000000,
   "kilometrage": 150000,
   "carburant": "Essence",
   "annee": date(2017, 2,1),
@@ -442,14 +498,15 @@ Hyundai_TUCSON_Limited_2018 = {
     ["Carnet d'entretien", "Oui"],
   ],
   
-  "image_urls": ["https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_01.jpg",
-"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_02.jpg",
-"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_03.jpg",
-"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_04.jpg"],
+  "image_urls": ["https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2018_Gris_01.jpg",
+"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2018_Gris_02.jpg",
+"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2018_Gris_03.jpg",
+"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2018_Gris_04.jpg"
+],
    
   "mark": "Hyundai",
   "model": "TUCSON Limited",
-  "price": 14000000,
+  "price": 9200000,
   "kilometrage": 195000,
   "carburant": "Essence",
   "annee": date(2018, 2,1),
@@ -472,125 +529,125 @@ Hyundai_TUCSON_Limited_2018 = {
 }
 
 
-Hyundai_TUCSON_Limited_2019 = {
-  "basicData": [
-    ["Carrosserie", "SUV/4x4/Pick-Up"],
-    ["État", "Occasion"],
-    ["Sièges", "5"],
-    ["Portes", "5"],
-    ["Numéro de la touche", "5013/AKP"],
-  ],
-  "energieData": [
-    ["Classe d'émission", "Euro 6"],
-    ["Carburant", "Essence"],
-    ["Consommation de carburant", "7,8l/100 km (mixte)"],
-    ["Émissions de CO2", "170 g/km (mixte)"],
-  ],
-  "equipement": [],
-  "generalValues": [
-    ["Kilométrage", "120 000 km"],
-    ["Transmission", "Boîte automatique"],
-    ["Année", "02/2019"],
-    ["Carburant", "Essence"],
-    ["Puissance kW (CH)", "130 kW (177 CH)"],
-  ],
-  "historicalData": [
-    ["Kilométrage", "120 000 km"],
-    ["Année", "02/2019"],
-    ["Propriétaires préc.", "2"],
-    ["Carnet d'entretien", "Oui"],
-  ],
+# Hyundai_TUCSON_Limited_2019 = {
+#   "basicData": [
+#     ["Carrosserie", "SUV/4x4/Pick-Up"],
+#     ["État", "Occasion"],
+#     ["Sièges", "5"],
+#     ["Portes", "5"],
+#     ["Numéro de la touche", "5013/AKP"],
+#   ],
+#   "energieData": [
+#     ["Classe d'émission", "Euro 6"],
+#     ["Carburant", "Essence"],
+#     ["Consommation de carburant", "7,8l/100 km (mixte)"],
+#     ["Émissions de CO2", "170 g/km (mixte)"],
+#   ],
+#   "equipement": [],
+#   "generalValues": [
+#     ["Kilométrage", "120 000 km"],
+#     ["Transmission", "Boîte automatique"],
+#     ["Année", "02/2019"],
+#     ["Carburant", "Essence"],
+#     ["Puissance kW (CH)", "130 kW (177 CH)"],
+#   ],
+#   "historicalData": [
+#     ["Kilométrage", "120 000 km"],
+#     ["Année", "02/2019"],
+#     ["Propriétaires préc.", "2"],
+#     ["Carnet d'entretien", "Oui"],
+#   ],
   
-  "image_urls": ["https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_01.jpg",
-"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_02.jpg",
-"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_03.jpg",
-"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_04.jpg"],
+#   "image_urls": ["https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_01.jpg",
+# "https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_02.jpg",
+# "https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_03.jpg",
+# "https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_04.jpg"],
    
-  "mark": "Hyundai",
-  "model": "TUCSON Limited",
-  "price": 14500000,
-  "kilometrage": 120000,
-  "carburant": "Essence",
-  "annee": date(2019, 2,1),
-  "carosserie": "SUV/4x4/Pick-Up",
-  "sieges": "5",
-  "portes": "5",
-  "pays": "Canada",
-  "moteur": None,
-  "transmission": "Boîte automatique",
-  "color": None,
-  "colorData": None,
-  "technicaData": [
-    ["Puissance kW (CH)", "130 kW (177 CH)"],
-    ["Transmission", "Boîte automatique"],
-    ["Cylindrée", "2 400 cm³"],
-    ["Cylindres", "4"],
-    ["Poids à vide", "1 980 kg"],
-  ],
-  "webid": "Carsis_seller"
-}
+#   "mark": "Hyundai",
+#   "model": "TUCSON Limited",
+#   "price": 14500000,
+#   "kilometrage": 120000,
+#   "carburant": "Essence",
+#   "annee": date(2019, 2,1),
+#   "carosserie": "SUV/4x4/Pick-Up",
+#   "sieges": "5",
+#   "portes": "5",
+#   "pays": "Canada",
+#   "moteur": None,
+#   "transmission": "Boîte automatique",
+#   "color": None,
+#   "colorData": None,
+#   "technicaData": [
+#     ["Puissance kW (CH)", "130 kW (177 CH)"],
+#     ["Transmission", "Boîte automatique"],
+#     ["Cylindrée", "2 400 cm³"],
+#     ["Cylindres", "4"],
+#     ["Poids à vide", "1 980 kg"],
+#   ],
+#   "webid": "Carsis_seller"
+# }
 
 
-Hyundai_TUCSON_Limited_2020 = {
-  "basicData": [
-    ["Carrosserie", "SUV/4x4/Pick-Up"],
-    ["État", "Occasion"],
-    ["Sièges", "5"],
-    ["Portes", "5"],
-    ["Numéro de la touche", "5013/AKQ"],
-  ],
-  "energieData": [
-    ["Classe d'émission", "Euro 6"],
-    ["Carburant", "Essence"],
-    ["Consommation de carburant", "7,5l/100 km (mixte)"],
-    ["Émissions de CO2", "165 g/km (mixte)"],
-  ],
-  "equipement": [],
-  "generalValues": [
-    ["Kilométrage", "105 000 km"],
-    ["Transmission", "Boîte automatique"],
-    ["Année", "02/2020"],
-    ["Carburant", "Essence"],
-    ["Puissance kW (CH)", "130 kW (177 CH)"],
-  ],
-  "historicalData": [
-    ["Kilométrage", "105 000 km"],
-    ["Année", "02/2020"],
-    ["Propriétaires préc.", "2"],
-    ["Carnet d'entretien", "Oui"],
-  ],
+# Hyundai_TUCSON_Limited_2020 = {
+#   "basicData": [
+#     ["Carrosserie", "SUV/4x4/Pick-Up"],
+#     ["État", "Occasion"],
+#     ["Sièges", "5"],
+#     ["Portes", "5"],
+#     ["Numéro de la touche", "5013/AKQ"],
+#   ],
+#   "energieData": [
+#     ["Classe d'émission", "Euro 6"],
+#     ["Carburant", "Essence"],
+#     ["Consommation de carburant", "7,5l/100 km (mixte)"],
+#     ["Émissions de CO2", "165 g/km (mixte)"],
+#   ],
+#   "equipement": [],
+#   "generalValues": [
+#     ["Kilométrage", "105 000 km"],
+#     ["Transmission", "Boîte automatique"],
+#     ["Année", "02/2020"],
+#     ["Carburant", "Essence"],
+#     ["Puissance kW (CH)", "130 kW (177 CH)"],
+#   ],
+#   "historicalData": [
+#     ["Kilométrage", "105 000 km"],
+#     ["Année", "02/2020"],
+#     ["Propriétaires préc.", "2"],
+#     ["Carnet d'entretien", "Oui"],
+#   ],
   
-  "image_urls": ["https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_01.jpg",
-"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_02.jpg",
-"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_03.jpg",
-"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_04.jpg"],
+#   "image_urls": ["https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_01.jpg",
+# "https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_02.jpg",
+# "https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_03.jpg",
+# "https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_04.jpg"],
    
-  "mark": "Hyundai",
-  "model": "TUCSON Limited",
-  "price": 15000000,
-  "kilometrage": 105000,
-  "carburant": "Essence",
-  "annee": date(2020, 2,1),
-  "carosserie": "SUV/4x4/Pick-Up",
-  "sieges": "5",
-  "portes": "5",
-  "pays": "Canada",
-  "moteur": None,
-  "transmission": "Boîte automatique",
-  "color": None,
-  "colorData": None,
-  "technicaData": [
-    ["Puissance kW (CH)", "130 kW (177 CH)"],
-    ["Transmission", "Boîte automatique"],
-    ["Cylindrée", "2 400 cm³"],
-    ["Cylindres", "4"],
-    ["Poids à vide", "1 990 kg"],
-  ],
-  "webid": "Carsis_seller"
-}
+#   "mark": "Hyundai",
+#   "model": "TUCSON Limited",
+#   "price": 15000000,
+#   "kilometrage": 105000,
+#   "carburant": "Essence",
+#   "annee": date(2020, 2,1),
+#   "carosserie": "SUV/4x4/Pick-Up",
+#   "sieges": "5",
+#   "portes": "5",
+#   "pays": "Canada",
+#   "moteur": None,
+#   "transmission": "Boîte automatique",
+#   "color": None,
+#   "colorData": None,
+#   "technicaData": [
+#     ["Puissance kW (CH)", "130 kW (177 CH)"],
+#     ["Transmission", "Boîte automatique"],
+#     ["Cylindrée", "2 400 cm³"],
+#     ["Cylindres", "4"],
+#     ["Poids à vide", "1 990 kg"],
+#   ],
+#   "webid": "Carsis_seller"
+# }
 
  
-Hyundai_TUCSON_Limited=[Hyundai_TUCSON_Limited_2011,Hyundai_TUCSON_Limited_2012,Hyundai_TUCSON_Limited_2013,
+Hyundai_TUCSON_Limited=[Hyundai_TUCSON_Limited_2011,Hyundai_TUCSON_Limited_2012,
 Hyundai_TUCSON_Limited_2014,Hyundai_TUCSON_Limited_2015,Hyundai_TUCSON_Limited_2016,Hyundai_TUCSON_Limited_2017,
-Hyundai_TUCSON_Limited_2018,Hyundai_TUCSON_Limited_2019,Hyundai_TUCSON_Limited_2020
+Hyundai_TUCSON_Limited_2018
 ]

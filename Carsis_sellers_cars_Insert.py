@@ -8,7 +8,7 @@ from carsis_seller_autos_models.Hyundai_ELANTRA.file import Hyundai_ELANTRA
 
 
 
-all_autos=[*Lexus_RX_350,*Lexus_NX_200t,*Hyundai_TUCSON,*Hyundai_TUCSON_Limited,*Hyundai_ELANTRA]
+all_autos=[*Hyundai_TUCSON,*Hyundai_TUCSON_Limited,*Hyundai_ELANTRA]  #*Lexus_RX_350,*Lexus_NX_200t,
 
 
 
