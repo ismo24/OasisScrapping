@@ -1,6 +1,9 @@
 from datetime import date
 
 
+
+
+
 Hyundai_ELANTRA_2009 = {
     "basicData": [
         ["Carrosserie", "Berline"],
@@ -34,6 +37,7 @@ Hyundai_ELANTRA_2009 = {
 "https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_ELANTRA_2009_Gris_03.jpg",
 "https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_ELANTRA_2009_Gris_04.jpg"
     ],
+    "webid":"Carsis_cars08dAIqZko",
     "mark": "Hyundai",
     "model": "Elantra",
     "price": 4200000,
@@ -92,6 +96,7 @@ Hyundai_ELANTRA_2010 = {
 "https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_ELANTRA_2010_Rouge_03.jpg",
 "https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_ELANTRA_2010_Rouge_04.jpg"
     ],
+    "webid":"Carsis_carsEcxFPGRYW",
     "mark": "Hyundai",
     "model": "ELANTRA",
     "price": 4400000,
@@ -148,6 +153,7 @@ Hyundai_ELANTRA_2011 = {
 "https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_ELANTRA_2011_Gris_02.jpg",
 "https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_ELANTRA_2011_Gris_03.jpg"
     ],
+    "webid":"Carsis_carsEJJkoV8Bk",
     "mark": "Hyundai",
     "model": "ELANTRA",
     "price": 4500000,
@@ -206,6 +212,7 @@ Hyundai_ELANTRA_2012 = {
 "https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_ELANTRA_2012_Gris_03.jpg",
 "https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_ELANTRA_2012_Gris_04.jpg"
     ],
+    "webid":"Carsis_cars1BsZytQId",
     "mark": "Hyundai",
     "model": "ELANTRA",
     "price": 4600000,
@@ -263,6 +270,7 @@ Hyundai_ELANTRA_2013 ={
 "https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_ELANTRA_2013_Gris_03.jpg",
 "https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_ELANTRA_2013_Gris_04.jpg"],
 
+  "webid":"Carsis_carssxIfssJ3I",
   "mark": "Hyundai",
   "model": "ELANTRA",
   "price": 5000000,
@@ -318,6 +326,7 @@ Hyundai_ELANTRA_2014 ={
 "https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_ELANTRA_2014_Blanc_02.jpg",
 "https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_ELANTRA_2014_Blanc_03.jpg"],
   "mark": "Hyundai",
+  "webid":"Carsis_carsbHoX1H73J",
   "model": "ELANTRA",
   "price": 5000000,
   "kilometrage": 142000,
@@ -375,6 +384,7 @@ Hyundai_ELANTRA_2015 = {
 "https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_ELANTRA_2015_Gris_04.jpg"
   ],
   "mark": "Hyundai",
+  "webid":"Carsis_carsi6INk2X2M",
   "model": "ELANTRA Limited",
   "price": 6100000,
   "kilometrage": 130000,
@@ -429,6 +439,7 @@ Hyundai_ELANTRA_2016={
 "https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_ELANTRA_2016_Blanc_02.jpg",
 "https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_ELANTRA_2016_Blanc_03.jpg"],
   "mark": "Hyundai",
+  "webid":"Carsis_carslVDZVmReL",
   "model": "ELANTRA",
   "price": 6500000,
   "kilometrage": 128000,
@@ -485,6 +496,7 @@ Hyundai_ELANTRA_2017={
 "https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_ELANTRA_2017_Blanc_03.jpg",
 "https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_ELANTRA_2017_Blanc_04.jpg"],
   "mark": "Hyundai",
+  "webid":"Carsis_carsZftbu8s4h",
   "model": "ELANTRA",
   "price": 6700000,
   "kilometrage": 140000,
@@ -540,6 +552,7 @@ Hyundai_ELANTRA_2018={
 "https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_ELANTRA_2018_Gris_02.jpg",
 "https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_ELANTRA_2018_Gris_03.jpg"],
   "mark": "Hyundai",
+  "webid":"Carsis_carsDukNIW6P3",
   "model": "ELANTRA",
   "price": 7700000,
   "kilometrage": 125000,
@@ -596,6 +609,7 @@ Hyundai_ELANTRA_2019={
 "https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_ELANTRA_2019_Blanc_03.jpg",
 "https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_ELANTRA_2019_Blanc_04.jpg"],
   "mark": "Hyundai",
+  "webid":"Carsis_carsIX2CivfGK",
   "model": "ELANTRA",
   "price": 8500000,
   "kilometrage": 130000,
@@ -653,6 +667,7 @@ Hyundai_ELANTRA_2020 = {
 "https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_ELANTRA_2020_Rouge_03.jpg",
 "https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_ELANTRA_2020_Rouge_04.jpg"],
   "mark": "Hyundai",
+  "webid":"Carsis_carspKQ3j1IIT",
   "model": "ELANTRA",
   "price": 9000000,
   "kilometrage": 120000,

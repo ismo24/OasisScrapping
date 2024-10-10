@@ -1,62 +1,66 @@
 from datetime import date
 
-Hyundai_TUCSON_2009 = {
-  "basicData": [
-    ["Carrosserie", "SUV/4x4/Pick-Up"],
-    ["État", "Occasion"],
-    ["Sièges", "5"],
-    ["Portes", "5"],
-    ["Numéro de la touche", "5013/AJG"],
-  ],
-  "energieData": [
-    ["Classe d'émission", "Euro 4"],
-    ["Carburant", "Essence"],
-    ["Consommation de carburant", "9,0l/100 km (mixte)"],
-    ["Émissions de CO2", "220 g/km (mixte)"],
-  ],
-  "equipement": [],
-  "generalValues": [
-    ["Kilométrage", "180 000 km"],
-    ["Transmission", "Boîte manuelle"],
-    ["Année", "02/2009"],
-    ["Carburant", "Essence"],
-    ["Puissance kW (CH)", "126 kW (171 CH)"],
-  ],
-  "historicalData": [
-    ["Kilométrage", "180 000 km"],
-    ["Année", "02/2009"],
-    ["Propriétaires préc.", "3"],
-    ["Carnet d'entretien", "Oui"],
-  ],
+
+
+
+# Hyundai_TUCSON_2009 = {
+#   "basicData": [
+#     ["Carrosserie", "SUV/4x4/Pick-Up"],
+#     ["État", "Occasion"],
+#     ["Sièges", "5"],
+#     ["Portes", "5"],
+#     ["Numéro de la touche", "5013/AJG"],
+#   ],
+#   "energieData": [
+#     ["Classe d'émission", "Euro 4"],
+#     ["Carburant", "Essence"],
+#     ["Consommation de carburant", "9,0l/100 km (mixte)"],
+#     ["Émissions de CO2", "220 g/km (mixte)"],
+#   ],
+#   "equipement": [],
+#   "generalValues": [
+#     ["Kilométrage", "180 000 km"],
+#     ["Transmission", "Boîte manuelle"],
+#     ["Année", "02/2009"],
+#     ["Carburant", "Essence"],
+#     ["Puissance kW (CH)", "126 kW (171 CH)"],
+#   ],
+#   "historicalData": [
+#     ["Kilométrage", "180 000 km"],
+#     ["Année", "02/2009"],
+#     ["Propriétaires préc.", "3"],
+#     ["Carnet d'entretien", "Oui"],
+#   ],
   
-  "image_urls": [
-"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_2009_Gris_01.jpg",
-"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_2009_Gris_02.jpg",
-"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_2009_Gris_03.jpg"],
+#   "image_urls": [
+# "https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_2009_Gris_01.jpg",
+# "https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_2009_Gris_02.jpg",
+# "https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_2009_Gris_03.jpg"],
    
-  "mark": "Hyundai",
-  "model": "TUCSON",
-  "price": 4300000,
-  "kilometrage": 180000,
-  "carburant": "Essence",
-  "annee": date(2009, 2,1),
-  "carosserie": "SUV/4x4/Pick-Up",
-  "sieges": "5",
-  "portes": "5",
-  "pays": "Canada",
-  "moteur": None,
-  "transmission": "Boîte manuelle",
-  "color": None,
-  "colorData": None,
-  "technicaData": [
-    ["Puissance kW (CH)", "126 kW (171 CH)"],
-    ["Transmission", "Boîte manuelle"],
-    ["Cylindrée", "2 000 cm³"],
-    ["Cylindres", "4"],
-    ["Poids à vide", "1 600 kg"],
-  ],
+#   "mark": "Hyundai",
+#   "webid":"Carsis_carss2tR8KKVn",
+#   "model": "TUCSON",
+#   "price": 4300000,
+#   "kilometrage": 180000,
+#   "carburant": "Essence",
+#   "annee": date(2009, 2,1),
+#   "carosserie": "SUV/4x4/Pick-Up",
+#   "sieges": "5",
+#   "portes": "5",
+#   "pays": "Canada",
+#   "moteur": None,
+#   "transmission": "Boîte manuelle",
+#   "color": None,
+#   "colorData": None,
+#   "technicaData": [
+#     ["Puissance kW (CH)", "126 kW (171 CH)"],
+#     ["Transmission", "Boîte manuelle"],
+#     ["Cylindrée", "2 000 cm³"],
+#     ["Cylindres", "4"],
+#     ["Poids à vide", "1 600 kg"],
+#   ],
   
-}
+# }
 
 Hyundai_TUCSON_2010 = {
   "basicData": [
@@ -93,6 +97,7 @@ Hyundai_TUCSON_2010 = {
 "https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_2010_Blanc_04.jpg"],
    
   "mark": "Hyundai",
+  "webid":"Carsis_cars6S2VxmSQR",
   "model": "TUCSON",
   "price": 5600000,
   "kilometrage": 170000,
@@ -151,6 +156,7 @@ Hyundai_TUCSON_2011 = {
 "https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_2011_Gris_04.jpg"],
    
   "mark": "Hyundai",
+  "webid":"Carsis_carsmhtKCjWAp",
   "model": "TUCSON",
   "price": 5600000,
   "kilometrage": 160000,
@@ -171,7 +177,7 @@ Hyundai_TUCSON_2011 = {
     ["Cylindres", "4"],
     ["Poids à vide", "1 690 kg"],
   ],
-  "webid": "Carsis_seller"
+ 
 }
 
 
@@ -210,6 +216,7 @@ Hyundai_TUCSON_2012 = {
 "https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_2012_Gris_04.jpg"],
    
   "mark": "Hyundai",
+  "webid":"Carsis_carsrPPvmW6PJ",
   "model": "TUCSON",
   "price": 5700000,
   "kilometrage": 150000,
@@ -230,7 +237,7 @@ Hyundai_TUCSON_2012 = {
     ["Cylindres", "4"],
     ["Poids à vide", "1 710 kg"],
   ],
-  "webid": "Carsis_seller"
+ 
 }
 
 
@@ -269,6 +276,7 @@ Hyundai_TUCSON_2013 = {
 "https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_2013_Bleu_04.jpg"],
    
   "mark": "Hyundai",
+  "webid":"Carsis_carsFiKVDXISy",
   "model": "TUCSON",
   "price": 5700000,
   "kilometrage": 140000,
@@ -289,7 +297,7 @@ Hyundai_TUCSON_2013 = {
     ["Cylindres", "4"],
     ["Poids à vide", "1 720 kg"],
   ],
-  "webid": "Carsis_seller"
+  
 }
 
 
@@ -327,6 +335,7 @@ Hyundai_TUCSON_2014 = {
 "https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_2014_Rouge_03.jpg",
 "https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_2014_Rouge_04.jpg"],
   "mark": "Hyundai",
+  "webid":"Carsis_carsceMYLW2Rf",
   "model": "TUCSON",
   "price": 6000000,
   "kilometrage": 130000,
@@ -347,7 +356,7 @@ Hyundai_TUCSON_2014 = {
     ["Cylindres", "4"],
     ["Poids à vide", "1 730 kg"],
   ],
-  "webid": "Carsis_seller"
+  
 }
 
 
@@ -386,6 +395,7 @@ Hyundai_TUCSON_2015 = {
 "https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_2015_Noir_04.jpg"],
    
   "mark": "Hyundai",
+  "webid":"Carsis_carsgHNuGSnE4",
   "model": "TUCSON",
   "price": 6000000,
   "kilometrage": 140000,
@@ -406,7 +416,7 @@ Hyundai_TUCSON_2015 = {
     ["Cylindres", "4"],
     ["Poids à vide", "1 740 kg"],
   ],
-  "webid": "Carsis_seller"
+  
 }
 
 
@@ -445,6 +455,7 @@ Hyundai_TUCSON_2016 = {
 "https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_2016_Blanc_04.jpg"],
    
   "mark": "Hyundai",
+  "webid":"Carsis_carsLaNKucjgZ",
   "model": "TUCSON",
   "price": 8100000,
   "kilometrage": 130000,
@@ -465,7 +476,7 @@ Hyundai_TUCSON_2016 = {
     ["Cylindres", "4"],
     ["Poids à vide", "1 750 kg"],
   ],
-  "webid": "Carsis_seller"
+  
 
 }
 Hyundai_TUCSON_2017 = {
@@ -503,6 +514,7 @@ Hyundai_TUCSON_2017 = {
 "https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_2017_Gris_04.jpg"],
    
   "mark": "Hyundai",
+  "webid":"Carsis_carslSzjFlwQT",
   "model": "TUCSON",
   "price": 8100000,
   "kilometrage": 120000,
@@ -523,7 +535,7 @@ Hyundai_TUCSON_2017 = {
     ["Cylindres", "4"],
     ["Poids à vide", "1 780 kg"],
   ],
-  "webid": "Carsis_seller"
+ 
 }
 
 
@@ -562,6 +574,7 @@ Hyundai_TUCSON_2018 = {
 "https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_2018_Rouge_04.jpg"],
    
   "mark": "Hyundai",
+  "webid":"Carsis_cars09F0NEnsv",
   "model": "TUCSON",
   "price": 8300000,
   "kilometrage": 110000,
@@ -582,7 +595,7 @@ Hyundai_TUCSON_2018 = {
     ["Cylindres", "4"],
     ["Poids à vide", "1 800 kg"],
   ],
-  "webid": "Carsis_seller"
+
 }
 
 Hyundai_TUCSON_2019 = {
@@ -620,6 +633,7 @@ Hyundai_TUCSON_2019 = {
 "https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_2019_Gris_04.jpg"],
    
   "mark": "Hyundai",
+  "webid":"Carsis_carsJBq8YZi8H",
   "model": "TUCSON",
   "price": 8300000,
   "kilometrage": 120000,
@@ -640,7 +654,7 @@ Hyundai_TUCSON_2019 = {
     ["Cylindres", "4"],
     ["Poids à vide", "1 820 kg"],
   ],
-  "webid": "Carsis_seller"
+  
 }
 
 Hyundai_TUCSON_2020 = {
@@ -678,6 +692,7 @@ Hyundai_TUCSON_2020 = {
 "https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_2020_Blanc_04.jpg"],
    
   "mark": "Hyundai",
+  "webid":"Carsis_carsm7o5k1kOJ",
   "model": "TUCSON",
   "price": 9000000,
   "kilometrage": 120000,
@@ -698,10 +713,10 @@ Hyundai_TUCSON_2020 = {
     ["Cylindres", "4"],
     ["Poids à vide", "1 850 kg"],
   ],
-  "webid": "Carsis_seller"
+  
 }
 
 
-Hyundai_TUCSON=[Hyundai_TUCSON_2009,Hyundai_TUCSON_2010,Hyundai_TUCSON_2011,Hyundai_TUCSON_2012,Hyundai_TUCSON_2013,
+Hyundai_TUCSON=[Hyundai_TUCSON_2010,Hyundai_TUCSON_2011,Hyundai_TUCSON_2012,Hyundai_TUCSON_2013,
 Hyundai_TUCSON_2014,Hyundai_TUCSON_2015,Hyundai_TUCSON_2016,Hyundai_TUCSON_2017,Hyundai_TUCSON_2018,Hyundai_TUCSON_2019,Hyundai_TUCSON_2020
 ]

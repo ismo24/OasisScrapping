@@ -132,7 +132,7 @@ def get_carsis_cars_webids():
 
 
 
-def insert_carsis_sellers_car(auto_webid,car_info):
+def insert_carsis_sellers_car(car_info):
     try:
         connection = create_connection()
         cursor = connection.cursor()
@@ -142,7 +142,7 @@ def insert_carsis_sellers_car(auto_webid,car_info):
         """
         
         values = (
-                auto_webid,
+                car_info.get("webid", None),
                 car_info.get("mark", None),
                 car_info.get("model", None),
                 car_info.get("price", None),

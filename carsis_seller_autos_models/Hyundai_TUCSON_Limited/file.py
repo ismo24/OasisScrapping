@@ -1,6 +1,9 @@
 from datetime import date
 
 
+ 
+
+
 Hyundai_TUCSON_Limited_2010 = {
   "basicData": [
     ["Carrosserie", "SUV/4x4/Pick-Up"],
@@ -36,6 +39,7 @@ Hyundai_TUCSON_Limited_2010 = {
 "https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2010_Gris_04.jpg"],
    
   "mark": "Hyundai",
+  "webid":"Carsis_carsknWEPVVkx",
   "model": "TUCSON Limited",
   "price": 6200000,
   "kilometrage": 120000,
@@ -94,6 +98,7 @@ Hyundai_TUCSON_Limited_2011 = {
 "https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2011_Gris_04.jpg"],
    
   "mark": "Hyundai",
+  "webid":"Carsis_carsIkwUttreQ",
   "model": "TUCSON Limited",
   "price": 6200000,
   "kilometrage": 160000,
@@ -152,6 +157,7 @@ Hyundai_TUCSON_Limited_2012 = {
 "https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2012_Bleu_03.jpg"],
    
   "mark": "Hyundai",
+  "webid":"Carsis_carsTNkaktaRf",
   "model": "TUCSON Limited",
   "price": 6300000,
   "kilometrage": 165000,
@@ -172,7 +178,7 @@ Hyundai_TUCSON_Limited_2012 = {
     ["Cylindres", "4"],
     ["Poids à vide", "1 880 kg"],
   ],
-  "webid": "Carsis_seller"
+  
 }
 
 
@@ -231,7 +237,7 @@ Hyundai_TUCSON_Limited_2012 = {
 #     ["Cylindres", "4"],
 #     ["Poids à vide", "1 900 kg"],
 #   ],
-#   "webid": "Carsis_seller"
+
 # }
 
 
@@ -270,6 +276,7 @@ Hyundai_TUCSON_Limited_2014 = {
 "https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_04.jpg"],
    
   "mark": "Hyundai",
+  "webid":"Carsis_carsnaNBGBV9f",
   "model": "TUCSON Limited",
   "price": 6800000,
   "kilometrage": 175000,
@@ -290,7 +297,7 @@ Hyundai_TUCSON_Limited_2014 = {
     ["Cylindres", "4"],
     ["Poids à vide", "1 920 kg"],
   ],
-  "webid": "Carsis_seller"
+  
 }
 
 Hyundai_TUCSON_Limited_2015 = {
@@ -322,12 +329,13 @@ Hyundai_TUCSON_Limited_2015 = {
     ["Carnet d'entretien", "Oui"],
   ],
   
-  "image_urls": ["https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_01.jpg",
-"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_02.jpg",
-"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_03.jpg",
-"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_04.jpg"],
+  "image_urls": ["https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2015_Gris_01.jpg",
+"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2015_Gris_02.jpg",
+"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2015_Gris_03.jpg",
+"https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2015_Gris_04.jpg"],
    
   "mark": "Hyundai",
+  "webid":"Carsis_carsCkjUiMej3",
   "model": "TUCSON Limited",
   "price": 6800000,
   "kilometrage": 180000,
@@ -348,7 +356,7 @@ Hyundai_TUCSON_Limited_2015 = {
     ["Cylindres", "4"],
     ["Poids à vide", "1 940 kg"],
   ],
-  "webid": "Carsis_seller"
+  
 }
 
 
@@ -387,6 +395,7 @@ Hyundai_TUCSON_Limited_2016 = {
 "https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2016_Bleu_04.jpg"],
    
   "mark": "Hyundai",
+  "webid":"Carsis_cars79Bvb6D3m",
   "model": "TUCSON Limited",
   "price": 9000000,
   "kilometrage": 145000,
@@ -407,7 +416,7 @@ Hyundai_TUCSON_Limited_2016 = {
     ["Cylindres", "4"],
     ["Poids à vide", "1 950 kg"],
   ],
-  "webid": "Carsis_seller"
+  
 }
 
 
@@ -445,6 +454,7 @@ Hyundai_TUCSON_Limited_2017 = {
 "https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2017_Rouge_03.jpg"],
    
   "mark": "Hyundai",
+  "webid":"Carsis_carsk0HT4FGjA",
   "model": "TUCSON Limited",
   "price": 9000000,
   "kilometrage": 150000,
@@ -465,7 +475,7 @@ Hyundai_TUCSON_Limited_2017 = {
     ["Cylindres", "4"],
     ["Poids à vide", "1 960 kg"],
   ],
-  "webid": "Carsis_seller"
+  
 }
 
 
@@ -505,6 +515,7 @@ Hyundai_TUCSON_Limited_2018 = {
 ],
    
   "mark": "Hyundai",
+  "webid":"Carsis_carsD5ezT0ZTH",
   "model": "TUCSON Limited",
   "price": 9200000,
   "kilometrage": 195000,
@@ -525,7 +536,7 @@ Hyundai_TUCSON_Limited_2018 = {
     ["Cylindres", "4"],
     ["Poids à vide", "1 970 kg"],
   ],
-  "webid": "Carsis_seller"
+ 
 }
 
 
@@ -564,6 +575,7 @@ Hyundai_TUCSON_Limited_2018 = {
 # "https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_04.jpg"],
    
 #   "mark": "Hyundai",
+#   "webid":"Carsis_carsOOe6WCYD1",
 #   "model": "TUCSON Limited",
 #   "price": 14500000,
 #   "kilometrage": 120000,
@@ -584,7 +596,7 @@ Hyundai_TUCSON_Limited_2018 = {
 #     ["Cylindres", "4"],
 #     ["Poids à vide", "1 980 kg"],
 #   ],
-#   "webid": "Carsis_seller"
+
 # }
 
 
@@ -623,6 +635,7 @@ Hyundai_TUCSON_Limited_2018 = {
 # "https://app.karborotech.net/carsis_seller_photos/Carsis_cars_Hyundai_TUCSON_Limited_2014_Gris_04.jpg"],
    
 #   "mark": "Hyundai",
+#   "webid":"Carsis_carsPAOTerySB",
 #   "model": "TUCSON Limited",
 #   "price": 15000000,
 #   "kilometrage": 105000,
@@ -643,7 +656,7 @@ Hyundai_TUCSON_Limited_2018 = {
 #     ["Cylindres", "4"],
 #     ["Poids à vide", "1 990 kg"],
 #   ],
-#   "webid": "Carsis_seller"
+
 # }
 
  
