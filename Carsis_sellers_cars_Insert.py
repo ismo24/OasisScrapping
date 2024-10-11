@@ -14,12 +14,17 @@ from carsis_seller_autos_models.Toyota_RAV_4_LE.file import Toyota_RAV_4_LE
 from carsis_seller_autos_models.Toyota_RAV_4_Limited.file import Toyota_RAV4_Limited
 from carsis_seller_autos_models.Toyota_RAV_4_Sport.file import Toyota_RAV4_Sport
 from carsis_seller_autos_models.Toyota_RAV_4_XLE.file import Toyota_RAV4_XLE
+from carsis_seller_autos_models.Toyota_Camry.file import Toyota_CAMRY
+from carsis_seller_autos_models.Toyota_Corolla.file import Toyota_COROLLA
+from carsis_seller_autos_models.Toyota_Matrix.file import Toyota_MATRIX
+from carsis_seller_autos_models.Toyota_Yaris_Sedan.file import Toyota_YARIS_SEDAN
 
 
 
 all_autos=[*Hyundai_TUCSON,*Hyundai_TUCSON_Limited,*Hyundai_ELANTRA,*Hyundai_SANTA_FE,
            *Kia_OPTIMA,*Kia_SPORTAGE,*Kia_SPORTAGE_Limited,*Toyota_RAV_4,
-           *Toyota_RAV_4_LE,*Toyota_RAV4_Limited,*Toyota_RAV4_Sport,*Toyota_RAV4_XLE]  #*Lexus_RX_350,*Lexus_NX_200t,
+           *Toyota_RAV_4_LE,*Toyota_RAV4_Limited,*Toyota_RAV4_Sport,*Toyota_RAV4_XLE,
+           *Toyota_CAMRY,*Toyota_COROLLA,*Toyota_MATRIX,*Toyota_YARIS_SEDAN]  #*Lexus_RX_350,*Lexus_NX_200t,
 
 
 
