@@ -167,7 +167,7 @@ def insert_carsis_sellers_car(car_info):
             )
         cursor.execute(car_query, values)
         connection.commit()
-        print(f"car {auto_webid}  inserted successfully")
+        print(f"car {car_info.get("webid", None)}  inserted successfully")
         if connection.is_connected():
             connection.close()
             print("Connection to MySQL DB closed")
