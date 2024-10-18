@@ -100,9 +100,7 @@ def price_finder(soup):
 
         # Convert to integer
         price = int(value)
-        if(price>100000):
-            price=price/10
-
+    
         
 
         # Retourrner false si la valeur du véhicule est inférieure à 1000 euros
