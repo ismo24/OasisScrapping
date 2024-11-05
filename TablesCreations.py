@@ -269,29 +269,30 @@ def truncate_tables():
         # cursor.execute(truncate_table_query)
         # connection.commit()
         # print("SCRAPING_CARS table truncated successfully")
-        truncate_table_query = "TRUNCATE TABLE cars;"
-        cursor.execute(truncate_table_query)
-        connection.commit()
-        print("cars table truncated successfully")
+        # truncate_table_query = "TRUNCATE TABLE cars;"
+        # cursor.execute(truncate_table_query)
+        # connection.commit()
+        # print("cars table truncated successfully")
         # truncate_table_query = "TRUNCATE TABLE CLIENTS_DATA;"  
         # cursor.execute(truncate_table_query)
         # connection.commit()
         # print("CLIENTS_DATA table truncated successfully")
 
-        # truncate_table_query = "TRUNCATE TABLE GLOBAL_STATS;"
-        # cursor.execute(truncate_table_query)
-        # connection.commit()  
-        # print("GLOBAL_STATS table truncated successfully")
+        truncate_table_query = "TRUNCATE TABLE GLOBAL_STATS;"
+        cursor.execute(truncate_table_query)
+        connection.commit()  
+        print("GLOBAL_STATS table truncated successfully")
 
-        # truncate_table_query = "TRUNCATE TABLE CARS_STATS;"
-        # cursor.execute(truncate_table_query)
-        # connection.commit()
-        # print("CARS_STATS table truncated successfully")
+        truncate_table_query = "TRUNCATE TABLE CARS_STATS;"
+        cursor.execute(truncate_table_query)
+        connection.commit()
+        print("CARS_STATS table truncated successfully")
 
-        # truncate_table_query = "TRUNCATE TABLE POPULAR_CARS;"
-        # cursor.execute(truncate_table_query)
-        # connection.commit()
-        # print("POPULAR_CARS table truncated successfully")
+        truncate_table_query = "TRUNCATE TABLE POPULAR_CARS;"
+        cursor.execute(truncate_table_query)
+        connection.commit()
+        print("POPULAR_CARS table truncated successfully")
+
         # truncate_table_query = "TRUNCATE TABLE BEST_DEAL_CARS;"
         # cursor.execute(truncate_table_query)
         # connection.commit()
